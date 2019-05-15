@@ -103,7 +103,7 @@ require_once './components/navSide.php';
                                             " . $aMovieFavorite['description'] . "
                                             " . $aMovieFavorite['production'] . "
                                             " . $aMovieFavorite['year'] . " </h2>
-                                            <a class='info' href='videoplayer.php'>Se film</a>
+                                            <a class='info' href='videoplayer.php?movieID=". $aMovieFavorite['id'] . "'>Se film</a>
                                       
                                             </div>
 
@@ -150,7 +150,7 @@ require_once './components/navSide.php';
                                             " . $aMovieCategory['description'] . "
                                             " . $aMovieCategory['production'] . "
                                             " . $aMovieCategory['year'] . " </h2>
-                                            <a class='info' href='videoplayer.php'>Se film</a>
+                                            <a class='info' href='videoplayer.php?movieID=". $aMovieCategory['id'] . "'>Se film</a>
                                       
                                             </div>
 
@@ -197,7 +197,7 @@ require_once './components/navSide.php';
                                             " . $aWatchedMovie['description'] . "
                                             " . $aWatchedMovie['production'] . "
                                             " . $aWatchedMovie['year'] . " </h2>
-                                            <a class='info' href='videoplayer.php'>Se film</a>
+                                            <a class='info' href='videoplayer.php?movieID=". $aWatchedMovie['id'] . "'>Se film</a>
                                       
                                             </div>
 
@@ -244,7 +244,7 @@ require_once './components/navSide.php';
                                             " . $aCategoryMovie['description'] . "
                                             " . $aCategoryMovie['production'] . "
                                             " . $aCategoryMovie['year'] . " </h2>
-                                            <a class='info' href='videoplayer.php'>Se film</a>
+                                            <a class='info' href='videoplayer.php?movieID=". $aMovieCategory['id'] . "'>Se film</a>
                                       
                                             </div>
 

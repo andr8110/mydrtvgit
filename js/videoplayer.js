@@ -6,25 +6,32 @@ $('#commentForm').submit(function (e) {
     $.ajax({
       url: "apis/api-insert-comment.php",
       method: "POST",
-      data: $('#commentForm').serialize()
+      data: $('#commentForm').serialize(),
+      dataType: 'JSON'
     }).always(function (jData){
       console.log(jData)
-    //   if (jData.status == 1) {
-    //     var sMovieId = $('input[name="txtDate"]').val();
-    //     var sUserId = $('input[name="txtDate"]').val();
-    //     var sRating = $('input[name="txtDate"]').val();
-    //     var sComment = $('#selectBridges option:selected').text();
+      if (jData.status !== 0) {
 
+                       
+        var sHTML = `<div id='${jData[0].id} commentrow' class='row commentRow'>
+                      <div class='col-sm-3'>
+                      <img src='http://dummyimage.com/60x60/666/ffffff&text=No+Image' class='img-rounded'>
+                      <div class='review-block-name'><a href='#'>${jData[0].name}</a></div>
+                      <div class='review-block-date'>January 29, 2016<br/>1 day ago</div>
+                  </div>
+                  <div class='col-sm-9'>
+                      <div class='review-block-description'>${jData[0].comment}</div>
+                      <div class='col-sm-12 text-right'>
+                          <a class='btn btn-warning btn-circle text-uppercase' data-toggle='collapse'
+                              href='#replyTwo'><span class='glyphicon glyphicon-comment'></span> 1 comment</a>
+                          <a class='float-right btn btn-outline-primary ml-2'> <i class='fa fa-reply'></i>
+                              Reply</a>
+                      </div>
+                      </div>`
   
-    //     var sHTML = `<div id='${jData.id}' class='report reportStatic'>
-    //                     <div class='date reportStatic' contenteditable='false'>${sDate}</div>
-    //                     <div class='companies reportStatic' contenteditable='false'>${sCompanies}</div>
-    //                     <div class='selectBridges reportStatic' contenteditable='false'>${sBridges}</div>
-    //                    </div>`
-  
-    //     $('#reports').prepend(sHTML)
-    //     return
-    //   }
-    //   console.log('Cannot submit comment')
+        $('#test').prepend(sHTML)
+        return
+      }
+      console.log('Cannot submit comment')
     })
   })

@@ -16,14 +16,23 @@ try {
     $sQuery->bindValue(':sComment', $_POST['addComment']);
 
     $sQuery->execute();
-    $iReportId = $db->lastInsertId();
+    $iCommentId = $db->lastInsertId();
     if( !$sQuery->rowCount() ){
         echo '{"status":0, "message":"could not insert data"}'; 
         exit;
     }
 
+    $stmt = $db->prepare('SELECT ratings.*, users.name, users.name FROM ratings AS ratings 
+                          INNER JOIN users AS users on ratings.user_fk = users.id
+                          WHERE ratings.id = :rating_fk
+                          AND users.id = :sUserId');
+    $stmt->bindValue(':rating_fk', $iCommentId);
+    $stmt->bindValue(':sUserId', $_SESSION['jUser']['id']);
+    $stmt->execute();
+    $aRatings = $stmt->fetchAll();
+    echo json_encode($aRatings);
+    exit();
 
-    echo '{"status":1, "message":"Submit succes"}';
 } catch (PDOException $e) {
     echo $e;
     echo '{"status":0, "message":"error"}';
