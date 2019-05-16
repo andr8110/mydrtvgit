@@ -4,6 +4,6 @@ describe('My First Test', function() {
 
       cy.contains('Login').click()
 
-      cy.url().should('include', 'index')
+      cy.url().should('include', 'index.php')
     })
   })
