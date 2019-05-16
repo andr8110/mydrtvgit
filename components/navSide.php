@@ -121,7 +121,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Børn</a>
                 </li>
-                <button><img src="img/21879710_1053867184749691_3233441853638443008_n.jpg"class="profile_picture_toggle rounded-circle" id="menu-toggle"><img></button>
+                <button class="profileButton"><img src="img/21879710_1053867184749691_3233441853638443008_n.jpg"class="profile_picture_toggle rounded-circle" id="menu-toggle"><img></button>
             </ul>
             <!-- <form class="form-inline my-2 my-md-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

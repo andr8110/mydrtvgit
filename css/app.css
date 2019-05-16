@@ -5,8 +5,16 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
   }
+
+  h3{
+    font-size: 24px!important;
+  }
   
   /*NAVBAR*/
+
+  form#demo-2 {
+    padding: 15px;
+}
   
   nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
     background-color: #333333!important;
@@ -14,13 +22,15 @@
   
   a.nav-link {
     color: #ccc!important;
+    font-size: 18px!important;
+    padding: 15px 15px!important;
   }
   
   img.navbar-brand {
-    max-width: 120px;
+    max-width: 190px;
   }
   .profile_picture_toggle{
-  max-height: 40px;  
+  max-height: 50px;  
   cursor: pointer;
   }
   
@@ -33,6 +43,12 @@
   }
   a.list-group-item.list-group-item-action.bg-dark {
     color: #ccc!important;
+  }
+
+  .profileButton{
+    margin: 0px 15px!important;
+    border-radius: 50px!important;
+    overflow: hidden;
   }
   
   /*search*/
