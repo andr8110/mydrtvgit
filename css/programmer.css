@@ -2,6 +2,8 @@
   #filter {
     background: #333;
     color: #ccc;
+    margin-top: 30px!important;
+    padding: 50px 30px;
 }
 #filter h5 {
   color: #fff;
@@ -21,6 +23,16 @@ a.filter-bogstav {
   /* width: 69px; */
 }
 
+input.form-control.mr-sm-2 {
+  width: 70%!important;
+}
+
+.list-group-item:first-child, .list-group-item:last-child{
+  border-top-left-radius: 0px!important;
+  border-top-right-radius: 0px!important;
+  border-bottom-left-radius: 0px!important;
+  border-bottom-right-radius: 0px!important;
+}
 
 
 /* TILE STRUCTURE */
