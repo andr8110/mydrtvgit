@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
   }
   
   /*NAVBAR*/
@@ -151,4 +152,43 @@
       #wrapper.toggled #sidebar-wrapper {
         margin-right: -15rem;
       }
+    }
+
+
+    /*FOOTER*/
+
+    #footer {
+      background: #333333 !important;
+      padding: 65px;
+  }
+  #footer h5{
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+      color:#ffffff;
+  }
+  
+  #footer li {
+      color: #ccc;
+      margin: 10px 0px;
+  }
+  
+  @media (max-width:767px){
+    #footer h5 {
+      padding-left: 0;
+      padding-bottom: 0px;
+      margin-bottom: 10px;
+  }
+  }
+
+  .kontaktLink{
+    color: #FFD400;
+    text-decoration: none;
+  }
+  .kontaktLink:hover{
+    color: rgb(208, 174, 1);
+    text-decoration: none;
+  }
+
+    .footerIndhold{
+      margin-left: 47px;
     }

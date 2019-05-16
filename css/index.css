@@ -157,26 +157,3 @@
 
 
 
-
-
-#footer {
-    background: #333333 !important;
-}
-#footer h5{
-    padding-left: 10px;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-    color:#ffffff;
-}
-
-#footer li {
-    color: #ccc;
-}
-
-@media (max-width:767px){
-	#footer h5 {
-    padding-left: 0;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-}
-}
