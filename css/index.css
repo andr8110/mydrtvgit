@@ -1,4 +1,5 @@
 
+
 /* SLIDER */
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -7,6 +8,10 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+  }
+
+  .headermessage{
+    padding-left: 15px;
   }
 
   @media (min-width: 768px) {
@@ -38,6 +43,11 @@
     height: 32rem;
   }
 
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 50px!important;
+    height: 50px!important;
+  }
+
 
 
 
@@ -49,7 +59,7 @@
   width: 100%;
 }
 
-  .movie.col-sm-4 {
+  .movie.col-sm-3 {
     margin-bottom: 30px;
 }
 

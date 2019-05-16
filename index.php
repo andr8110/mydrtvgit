@@ -95,7 +95,7 @@ require_once './components/navSide.php';
                             $aMoviesFavorite = $sQuery->fetchAll();
                             foreach ($aMoviesFavorite as $aMovieFavorite) {
 
-                            echo "<div class='movie col-sm-4'>
+                            echo "<div class='movie col-sm-3'>
                             <div class='hovereffect'>
                                         <img src=" . $aMovieFavorite['path'] . ">
                                         <div class='overlay'>
@@ -142,7 +142,7 @@ require_once './components/navSide.php';
                             $aMoviesCategory = $sQuery->fetchAll();
                             foreach ($aMoviesCategory as $aMovieCategory) {
 
-                            echo "<div class='movie col-sm-4'>
+                            echo "<div class='movie col-sm-3'>
                             <div class='hovereffect'>
                                         <img src=" . $aMovieCategory['path'] . ">
                                         <div class='overlay'>
@@ -189,7 +189,7 @@ require_once './components/navSide.php';
                             $aWatchedMovies = $sQuery->fetchAll();
                             foreach ($aWatchedMovies as $aWatchedMovie) {
 
-                            echo "<div class='movie col-sm-4'>
+                            echo "<div class='movie col-sm-3'>
                             <div class='hovereffect'>
                                         <img src=" . $aWatchedMovie['path'] . ">
                                         <div class='overlay'>
@@ -236,7 +236,7 @@ require_once './components/navSide.php';
                             $aCategoryMovies = $sQuery->fetchAll();
                             foreach ($aCategoryMovies as $aCategoryMovie) {
 
-                            echo "<div class='movie col-sm-4'>
+                            echo "<div class='movie col-sm-3'>
                             <div class='hovereffect'>
                                         <img src=" . $aCategoryMovie['path'] . ">
                                         <div class='overlay'>
