@@ -50,6 +50,19 @@
     border-radius: 50px!important;
     overflow: hidden;
   }
+
+  .profilPicMenu{
+    max-width: 100px;
+  }
+
+  .sideMenuTop{
+    margin: 56px;
+  }
+
+  .profileName{
+    margin: 10px;
+    color: #ccc;  
+  }
   
   /*search*/
   
@@ -129,7 +142,7 @@
   /*SIDEBAR MENU*/
     #sidebar-wrapper {
       min-height: 100vh;
-      margin-right: -15rem;
+      margin-right: -20rem;
       margin-top: 56px;
       -webkit-transition: margin .25s ease-out;
       -moz-transition: margin .25s ease-out;
@@ -168,6 +181,10 @@
       #wrapper.toggled #sidebar-wrapper {
         margin-right: -15rem;
       }
+    }
+
+    .nedersteLinks{
+      margin-top: 60px;
     }
 
 

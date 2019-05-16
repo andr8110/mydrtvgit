@@ -2,6 +2,14 @@
 
     <!-- Sidebar -->
     <div class="bg-dark" id="sidebar-wrapper">
+        <div class="row sideMenuTop">
+            <div class="col-12 text-center">
+                <img class="profilPicMenu" src="img/21879710_1053867184749691_3233441853638443008_n.png">
+                <div class="col-12">
+                    <h3 class="profileName">Malene Bærtelsen</h3>
+                </div>
+            </div>
+        </div>
         <div class="list-group list-group-flush">
             <a href="#" class="list-group-item list-group-item-action bg-dark">Se videre</a>
 
@@ -88,10 +96,10 @@
 
 
 
-            <a href="#" class="list-group-item list-group-item-action bg-dark">Dine anmeldelser</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark nedersteLinks">Dine anmeldelser</a>
             <a href="#" class="list-group-item list-group-item-action bg-dark">Dine kommentarer</a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark">Indstillinger</a>
-            <a href="logout.php" class="list-group-item list-group-item-action bg-dark">Log ud</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark ">Indstillinger</a>
+            <a href="logout.php" class="list-group-item list-group-item-action bg-dark ">Log ud</a>
         </div>
     </div>
 
@@ -121,7 +129,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Børn</a>
                 </li>
-                <button class="profileButton"><img src="img/21879710_1053867184749691_3233441853638443008_n.jpg"class="profile_picture_toggle rounded-circle" id="menu-toggle"><img></button>
+                <button class="profileButton"><img src="img/21879710_1053867184749691_3233441853638443008_n.png"class="profile_picture_toggle rounded-circle" id="menu-toggle"><img></button>
             </ul>
             <!-- <form class="form-inline my-2 my-md-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
