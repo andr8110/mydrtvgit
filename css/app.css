@@ -179,6 +179,7 @@
       -moz-transition: margin .25s ease-out;
       -o-transition: margin .25s ease-out;
       transition: margin .25s ease-out;
+      width: 20vw;
     }
     
     #sidebar-wrapper .sidebar-heading {
@@ -210,7 +211,7 @@
       }
     
       #wrapper.toggled #sidebar-wrapper {
-        margin-right: -15rem;
+        margin-right: -22rem;
       }
     }
 
