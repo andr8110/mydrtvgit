@@ -41,6 +41,7 @@
     left: 0;
     min-width: 100%;
     height: 32rem;
+    object-fit: cover;
   }
 
   .carousel-control-next-icon, .carousel-control-prev-icon{
@@ -91,6 +92,8 @@
     position:relative;
     -webkit-transition:all .4s linear;
     transition:all .4s linear;
+    height: 250px;
+    object-fit: cover
     }
     
     .hovereffect h2 {
@@ -149,6 +152,20 @@
     .hovereffect:hover a.info {
     -webkit-transition-delay:.2s;
     transition-delay:.2s;
+    }
+
+
+    /* Search page */
+
+    #searchResult {
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .searhResultHeader1 {
+      padding-top: 50px;
+      text-align: center;
     }
 
 

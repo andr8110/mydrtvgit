@@ -135,9 +135,10 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form> -->
-            <form id="demo-2">
-            <input type="search" placeholder="Search">
-</form>
+            <form id="demo-2" class='frmSearch'>
+                <input id='txtSearch' type="text" placeholder="Search"> 
+                <button class='btnSearch' type='submit'><i class="fas fa-search"></i></button>
+            </form>
             
         </div>
     </nav>
