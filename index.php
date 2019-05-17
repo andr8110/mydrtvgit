@@ -215,6 +215,33 @@ require_once './components/navSide.php';
         </div>
 
 
+        <div class='row text-center'>
+            <h3 class='headermessage'>Live TV</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <img class="liveTvImg" src="img/Skærmbillede 2019-05-17 kl. 19.38.57-02.png">
+            </div>
+           <div class="col-sm-12 col-md-4">
+                <img class="liveTvImg" src="img/dr2-02.png">
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <img class="liveTvImg" src="img/dr3-02.png">
+            </div>
+           
+        </div>
+        <div class="row">
+           <div class="col-sm-12 col-md-4">
+                <img class="liveTvImg" src="img/drk-02.png">
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <img class="liveTvImg" src="img/rama-02.png">
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <img class="liveTvImg" src="img/ultra-02.png">
+            </div>
+        </div>
+
 
         <div class='row text-center'>
             <h3 class='headermessage'>Komedie</h3>
