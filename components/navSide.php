@@ -1,4 +1,4 @@
-<div class="d-flex flex-row-reverse" id="wrapper">
+<div class="d-flex flex-row-reverse toggled" id="wrapper">
 
     <!-- Sidebar -->
     <div class="bg-dark" id="sidebar-wrapper">
