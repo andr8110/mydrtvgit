@@ -166,8 +166,65 @@
     .searhResultHeader1 {
       padding-top: 50px;
       text-align: center;
+      width: 100%;
     }
 
+    .advancedSearch {
+      margin: 0px;
+      padding-left: 15px;
+      color: #940000;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #advancedSearchLink {
+      text-decoration: none !important;
+    }
+
+    /* Advanced Search Page*/
+    .advancedSearchHeader1 {
+      padding-top: 50px;
+      text-align: center;
+    }
+
+    #frmAdvancedSearch {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 20px;
+    padding: 40px 10px;
+    background-color: #f2f2f2;
+    border: 2px solid black
+    }
+
+    #frmAdvancedSearch .inputTextField {
+      width: 200px;
+      height: 38px;
+      padding: 0px 10px;
+      margin: 0px 10px;
+
+    }
+
+    .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    background-color: #343a40 !important;
+    border-color: #343a40 !important;
+    }
+
+    #frmAdvancedSearch #btnSearch {
+      margin-left: 10px;
+    }
+
+    #advancedSearchResultContainer {
+      margin: 0px 20px;
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #advancedSearchResultHeader2 {
+      margin: 0px 20px;
+      padding-top: 20px;
+    }
 
 
 

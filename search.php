@@ -16,6 +16,7 @@ require_once './components/navSide.php';
 
 <div id='page-content-wrapper'>
     <h1 class='searhResultHeader1'>Search Result</h1>
+    <a id='advancedSearchLink' href="advancedSearch.php"><p class='advancedSearch'>Advanced Search</p></a>
     <div id='searchResult'>
         
     <?php
@@ -28,20 +29,20 @@ require_once './components/navSide.php';
         $sQuery->bindValue(':sTitle', $_GET['searchName'].'%');
         $sQuery->execute();
 
-        $aMovies = $sQuery->fetchAll();
-        // echo json_encode($aMovies);
+        $aResults = $sQuery->fetchAll();
+        // echo json_encode($aResults);
         
-        foreach ($aMovies as $aMovie) {
+        foreach ($aResults as $aResult) {
 
         echo "<div class='movie col-sm-3'>
         <div class='hovereffect'>
-                    <img src=" . $aMovie['path'] . ">
+                    <img src=" . $aResult['path'] . ">
                     <div class='overlay'>
-                    <h2> " . $aMovie['title'] . " 
-                        " . $aMovie['description'] . "
-                        " . $aMovie['production'] . "
-                        " . $aMovie['year'] . " </h2>
-                        <a class='info' href='videoplayer.php?movieID=". $aMovie['id'] . "'>Se film</a>
+                    <h2> " . $aResult['title'] . " 
+                        " . $aResult['description'] . "
+                        " . $aResult['production'] . "
+                        " . $aResult['year'] . " </h2>
+                        <a class='info' href='videoplayer.php?movieID=". $aResult['id'] . "'>Se film</a>
                   
                         </div>
 
