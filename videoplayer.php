@@ -88,7 +88,7 @@ require_once './components/navSide.php';
                                                         </span>
                                                     </div>
                                                     <div class="col-sm-12">
-                                                        <textarea cla ss="form-control" name="addComment"
+                                                        <textarea id="ratingComment" class="form-control" name="addComment"
                                                             id="addComment" rows="4"></textarea>
 
 
@@ -97,7 +97,7 @@ require_once './components/navSide.php';
                                                                 <button
                                                                     class="btn btn-success btn-circle text-uppercase submitKnap"
                                                                     type="submit" id="submitComment"><span
-                                                                        class="glyphicon glyphicon-send"></span> Submit
+                                                                        class="glyphicon glyphicon-send"></span>Submit
                                                                     comment</button>
                                                             </div>
                                                         </div>
