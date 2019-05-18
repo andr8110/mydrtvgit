@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="list-group list-group-flush">
-            <a href="#" class="list-group-item list-group-item-action bg-dark">Se videre</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark">Se videre med profilen</a>
 
             <?php
                         require_once 'database.php';
@@ -97,9 +97,10 @@
 
 
             <a href="#" class="list-group-item list-group-item-action bg-dark nedersteLinks">Dine anmeldelser</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark">Dine Favoritter</a>
             <a href="#" class="list-group-item list-group-item-action bg-dark">Dine kommentarer</a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark ">Indstillinger</a>
-            <a href="logout.php" class="list-group-item list-group-item-action bg-dark ">Log ud</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark nedersteLinks"><i class="fas fa-cog"></i> Indstillinger</a>
+            <a href="logout.php" class="list-group-item list-group-item-action bg-dark "><i class="fas fa-sign-out-alt"></i> Log ud</a>
         </div>
     </div>
 

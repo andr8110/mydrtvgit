@@ -56,7 +56,9 @@
   }
 
   .sideMenuTop{
-    margin: 56px;
+    /* margin: 56px; */
+    margin: 40px;
+    margin-bottom: 20px;
     width: 100%;
   }
 
@@ -192,7 +194,8 @@
     }
     
     #sidebar-wrapper .list-group {
-      width: 15rem;
+      /* width: 15rem; */
+      width: 20rem;
     }
     
     #page-content-wrapper {
@@ -220,7 +223,8 @@
     }
 
     .nedersteLinks{
-      margin-top: 60px;
+      /* margin-top: 60px; */
+      margin-top: 20px;
     }
 
 
