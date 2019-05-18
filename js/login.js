@@ -9,7 +9,7 @@ $('.form-signin').submit(function (e) {
   }).always(function (jData) {
     console.log(jData)
     if (jData.status === 1) {
-      location.href = "/mydrtv/mydrtvgit/index.php"
+      location.href = "/mydrtv2/mydrt/index.php"
       return
     }
 
