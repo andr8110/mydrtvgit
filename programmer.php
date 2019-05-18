@@ -32,55 +32,55 @@ require_once './components/navSide.php';
                 <div class="col-sm-3">
                     <h5>Genre</h5>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">Drama</label>
+                        <label><input type="checkbox" value="Drama">Drama</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">Dokumentar</label>
+                        <label><input type="checkbox" value="Dokumentar">Dokumentar</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">Kultur</label>
+                        <label><input type="checkbox" value="Kultur">Kultur</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">Natur og viden</label>
+                        <label><input type="checkbox" value="Natur">Natur og viden</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">Nyheder og aktualitet</label>
+                        <label><input type="checkbox" value="Nyheder">Nyheder og aktualitet</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">Sport</label>
+                        <label><input type="checkbox" value="Sport">Sport</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">Underholdning</label>
+                        <label><input type="checkbox" value="Underholdning">Underholdning</label>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <h5>Kanal</h5>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">Dr1</label>
+                        <label><input type="checkbox" value="Dr1">Dr1</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">DR2</label>
+                        <label><input type="checkbox" value="DR2">DR2</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">DR3</label>
+                        <label><input type="checkbox" value="DR3">DR3</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">DRK</label>
+                        <label><input type="checkbox" value="DRK">DRK</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">Ramasjang</label>
+                        <label><input type="checkbox" value="Ramasjang">Ramasjang</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">Ultra</label>
+                        <label><input type="checkbox" value="Ultra">Ultra</label>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <h5>Type</h5>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">Film</label>
+                        <label><input type="checkbox" value="Film">Film</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="">Serie</label>
+                        <label><input type="checkbox" value="Serie">Serie</label>
                     </div>
                 </div>
             </div>
