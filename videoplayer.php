@@ -29,7 +29,7 @@ require_once './components/navSide.php';
                             $aMoviesChosen = $sQuery->fetchAll();
                             foreach ($aMoviesChosen as $aMovieChosen) {
 
-                            echo "<img class='embed-responsive-item' src='" . $aMovieChosen['path'] . "'>
+                            echo "<iframe class='d-block w-100' width='250' height='250' src=" . $aMovieChosen['path'] . "  frameborder='0'></iframe>
                                     </div>
                                     </div>
                                     <div class='col-sm-12 text-left videoTitle'>

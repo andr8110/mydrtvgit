@@ -29,7 +29,7 @@
 
                             echo "<div class='movie col-sm-12'>
                             <div class='hovereffect'>
-                                        <img src=" . $aWatchedMovie['path'] . ">
+                            <iframe class='d-block w-100' width='250' height='250' src=" . $aWatchedMovie['path'] . "  frameborder='0'></iframe>
                                         <div class='overlay'>
                                         <h2> " . $aWatchedMovie['title'] . " 
                                             " . $aWatchedMovie['description'] . "
@@ -70,7 +70,7 @@
 
                             echo "<div class='movie col-sm-12'>
                             <div class='hovereffect'>
-                                        <img src=" . $aMovieCategory['path'] . ">
+                            <iframe class='d-block w-100' width='250' height='250' src=" . $aMovieCategory['path'] . "  frameborder='0'></iframe>
                                         <div class='overlay'>
                                         <h2> " . $aMovieCategory['title'] . " 
                                             " . $aMovieCategory['description'] . "
