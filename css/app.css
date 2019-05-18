@@ -227,6 +227,11 @@
       margin-top: 20px;
     }
 
+    a.list-group-item.list-group-item-action.bg-dark:hover {
+      background: #ccc;
+      border-left: 20px solid #FFD400;
+  }
+
 
     /*FOOTER*/
 
