@@ -35,7 +35,7 @@
                                             " . $aWatchedMovie['description'] . "
                                             " . $aWatchedMovie['production'] . "
                                             " . $aWatchedMovie['year'] . " </h2>
-                                            <a id='recommendedMovie' class='info' href='videoplayer.php?movieID=". $aWatchedMovie['id'] . "'>Se film</a>
+                                            <a id='continueWatchingMovie' class='info' href='videoplayer.php?movieID=". $aWatchedMovie['id'] . "'>Se film</a>
                                       
                                             </div>
 
@@ -76,7 +76,7 @@
                                             " . $aMovieCategory['description'] . "
                                             " . $aMovieCategory['production'] . "
                                             " . $aMovieCategory['year'] . " </h2>
-                                            <a class='info' href='videoplayer.php?movieID=". $aMovieCategory['id'] . "'>Se film</a>
+                                            <a id='recommendedMovie' class='info' href='videoplayer.php?movieID=". $aMovieCategory['id'] . "'>Se film</a>
                                       
                                             </div>
 

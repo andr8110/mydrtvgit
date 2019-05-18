@@ -1,4 +1,4 @@
-describe('Test 3', function () {
+describe('Test 4', function () {
     it('DRTV Login Page', function () {
 
         // Goes to login page
@@ -14,7 +14,7 @@ describe('Test 3', function () {
         cy.get('.profileButton').click()
 
         // Clicks on button containing text "Login" and tries redirecting to new page
-        cy.get('#recommendedMovie').click()
+        cy.get('#continueWatchingMovie').click()
 
         // Checks that new page contains "videoplayer.php" in url and redirects if so
         cy.url().should('include', 'videoplayer.php')
