@@ -171,6 +171,10 @@
   
   
   /*SIDEBAR MENU*/
+  div#wrapper {
+    overflow: hidden;
+}
+
     #sidebar-wrapper {
       min-height: 100vh;
       margin-right: -20rem;
@@ -211,7 +215,7 @@
       }
     
       #wrapper.toggled #sidebar-wrapper {
-        margin-right: -22rem;
+        margin-right: -24rem;
       }
     }
 
