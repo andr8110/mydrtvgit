@@ -42,7 +42,7 @@ require_once './components/navSide.php';
                         " . $aResult['description'] . "
                         " . $aResult['production'] . "
                         " . $aResult['year'] . " </h2>
-                        <a class='info' href='videoplayer.php?movieID=". $aResult['id'] . "'>Se film</a>
+                        <a id=" . $aResult['id'] . " class='info' href='videoplayer.php?movieID=". $aResult['id'] . "'>Se film</a>
                   
                         </div>
 
