@@ -98,7 +98,7 @@ require_once './components/navSide.php';
                                                                 <button
                                                                     class="btn btn-success btn-circle text-uppercase"
                                                                     type="submit" id="submitComment"><span
-                                                                        class="glyphicon glyphicon-send"></span> Summit
+                                                                        class="glyphicon glyphicon-send"></span> Submit
                                                                     comment</button>
                                                             </div>
                                                         </div>
@@ -222,4 +222,5 @@ require_once './components/navSide.php';
 </div>
 <?php
 $sScript = 'videoplayer.js';
+require_once './components/footerSide.php';
 require_once './components/bottom.php';
