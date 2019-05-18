@@ -1,6 +1,7 @@
 .backgroundColor {
     max-width: 100%!important;
     background-color: #262626;
+    padding-bottom: 8vh;
 }
 
 .container.contentWrapped {
@@ -13,17 +14,22 @@
 
 .videoTitle{
     color: #ccc;
-    padding: 10px;
+    padding: 10px!important;
 }
 
 .videoInformation{
     color:#ccc;
     background-color: #333333;
     padding: 10px;
+    margin-left: 10px!important;
 }
 
 
 /*RATING*/
+
+.ratingContainer{
+    margin-bottom:5vh; 
+}
 
 .star-rating {
     font-size: 0;
@@ -86,7 +92,22 @@
   }
 
 
+textarea#addComment {
+    width: 100%;
+}
 
+.submitKnap{
+    border: 1px solid #FFD400!important;
+    background-color: transparent!important;
+    color: #262626!important;
+}
+
+
+.submitKnap:hover{
+    border: 1px solid #FFD400!important;
+    background-color: #FFD400!important;
+    color: #262626!important;
+}
 
 
 

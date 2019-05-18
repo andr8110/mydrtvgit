@@ -77,8 +77,7 @@ require_once './components/navSide.php';
                                             <form action="#" method="post" class="form-horizontal" id="commentForm"
                                                 role="form">
                                                 <div class="form-group">
-                                                    <label for="email" class="col-sm-4 control-label">Vurdér selv
-                                                        filmen</label>
+                                                    <h3>Vurdér selv filmen</h3>
                                                     <div class="col-sm-8">
                                                         <span class="star-rating">
                                                             <input type="radio" name="rating" value="1"><i></i>
@@ -88,15 +87,15 @@ require_once './components/navSide.php';
                                                             <input type="radio" name="rating" value="5"><i></i>
                                                         </span>
                                                     </div>
-                                                    <div class="col-sm-8">
+                                                    <div class="col-sm-12">
                                                         <textarea cla ss="form-control" name="addComment"
-                                                            id="addComment" rows="5"></textarea>
+                                                            id="addComment" rows="4"></textarea>
 
 
                                                         <div class="form-group">
-                                                            <div class="col-sm-8 text-right">
+                                                            <div class="col-sm-12 text-right">
                                                                 <button
-                                                                    class="btn btn-success btn-circle text-uppercase"
+                                                                    class="btn btn-success btn-circle text-uppercase submitKnap"
                                                                     type="submit" id="submitComment"><span
                                                                         class="glyphicon glyphicon-send"></span> Submit
                                                                     comment</button>
