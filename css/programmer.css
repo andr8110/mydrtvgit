@@ -44,6 +44,10 @@ button.btn.btn-outline-success.my-2.my-sm-0 {
   border-color: #FFD400!important;
 }
 
+.btn-outline-success:hover{
+  background-color: #FFD400!important;
+}
+
 /* TILE STRUCTURE */
 .movie img {
   width: 100%;
