@@ -146,7 +146,7 @@ require_once './components/navSide.php';
                             foreach ($aMovies as $aMovie)  {
 
                             echo "<li class='list-inline-item col-xs-12 col-sm-6 col-md-3 col-lg-3'>
-                                  <a href='videoplayer.php'><span
+                                  <a href='videoplayer.php?movieID=". $aMovie['id'] . "'><span
                                     class='col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left programListColFix programTitle'>
                                     " . $aMovie['title'] . "</span></a>
                                   </li>";
@@ -164,47 +164,6 @@ require_once './components/navSide.php';
                 </div>
             </div>
 
-        </div>
-
-
-        <div class="container">
-            <div class="row">
-
-
-            <?php
-                        require_once 'database.php';
-
-                        try {
-                            $sQuery = $db->prepare('SELECT * FROM `movies` LIMIT 6');
-                            $sQuery->execute();
-
-                            $aMovies = $sQuery->fetchAll();
-                            foreach ($aMovies as $aMovie) {
-
-                                echo "<div class='movie col-sm-4'>
-                                        <div class='hovereffect'>
-                                            <img src=" . $aMovie['path'] . ">
-                                            <div class='overlay'>
-                                            <h2> " . $aMovie['title'] . " <br> 
-                                                " . $aMovie['description'] . " <br>
-                                                " . $aMovie['production'] . " <br>
-                                                " . $aMovie['year'] . "
-                                                </h2>
-                                                <a class='info' href='videoplayer.php'>Se film</a>
-                                                    </div>
-                                        </div>
-                                       </div>";
-                                                
-                                            }
-                        } catch (PDOException $ex) {
-                        echo ($ex);
-                        echo "Sorry, system is updating ...";
-                        }
-
-                        ?>
-
-
-            </div>
         </div>
 
 
