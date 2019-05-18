@@ -15,12 +15,17 @@ a.filter-punkt {
 }
 
 a.filter-punkt:hover {
-  background: #ccc;
+  background: #4D4D4D;
   border-left: 20px solid #FFD400;
+  color: #ccc;
 }
 a.filter-bogstav {
   font-size: 30px;
   /* width: 69px; */
+}
+a.filter-bogstav:hover{
+  background-color: #FFD400;
+  border-radius: 0px;
 }
 
 input.form-control.mr-sm-2 {
@@ -35,7 +40,7 @@ input.form-control.mr-sm-2 {
 }
 
 form.form-inline.my-2.my-md-0 {
-  margin: 0px 0px 40px 0px !important;
+  margin: 0px 0px 60px 0px !important;
 }
 
 button.btn.btn-outline-success.my-2.my-sm-0 {
@@ -46,6 +51,11 @@ button.btn.btn-outline-success.my-2.my-sm-0 {
 
 .btn-outline-success:hover{
   background-color: #FFD400!important;
+}
+
+.alfabetFiltrering{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* TILE STRUCTURE */

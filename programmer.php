@@ -13,7 +13,7 @@ require_once './components/navSide.php';
         <div id="filter" class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <form class="form-inline my-2 my-md-0">
+                    <form class="form-inline my-2 my-md-0 d-flex justify-content-center">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
@@ -84,7 +84,7 @@ require_once './components/navSide.php';
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row form-inline my-2 my-md-0 d-flex justify-content-end">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Find nu</button>
             </div>
         </div>
@@ -92,7 +92,7 @@ require_once './components/navSide.php';
 
 
         <div class="container">
-            <div class="row">
+            <div class="row alfabetFiltrering">
                 <div class="col-sm-12">
                     <a href="#" class="filter-bogstav btn btn-default">A</a>
                     <a href="#" class="filter-bogstav btn btn-default">B</a>
