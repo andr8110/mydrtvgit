@@ -6,7 +6,7 @@ describe('Test 2', function () {
 
         // Clicks on button containing text "Login" and tries redirecting to new page
         cy.contains('Login').click()
-/*
+
         // Checks that new page contains "index.php" in url and redirects if so
         cy.url().should('include', 'index.php')
 
@@ -18,7 +18,23 @@ describe('Test 2', function () {
 
         // Checks off checkbox containing the value "Drama"
         cy.get('[type="checkbox"]').check(['Drama'])
-*/
+
+        /*
+        // Clicks on button containing "Find nu" and tries redirecting to new page
+        cy.contains('Find nu').click()
+
+        // Checks that new page contains "search.php" in url and redirects if so
+        cy.url().should('include', 'search.php')
+
+        // Clicks on button containing text "Se Film" and starts movie
+        cy.get('#1').click()
+    
+        // Checks that new page contains "videoplayer.php" in url and redirects if so
+        cy.url().should('include', 'videoplayer.php')
+        
+        // Clicks on button containing text "Play" and starts movie
+        cy.contains('Play').click()
+        */
 
 
 

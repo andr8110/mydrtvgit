@@ -35,7 +35,7 @@
                                             " . $aWatchedMovie['description'] . "
                                             " . $aWatchedMovie['production'] . "
                                             " . $aWatchedMovie['year'] . " </h2>
-                                            <a class='info' href='videoplayer.php?movieID=". $aWatchedMovie['id'] . "'>Se film</a>
+                                            <a id='recommendedMovie' class='info' href='videoplayer.php?movieID=". $aWatchedMovie['id'] . "'>Se film</a>
                                       
                                             </div>
 
