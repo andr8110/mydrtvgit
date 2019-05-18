@@ -109,7 +109,7 @@ require_once './components/navSide.php';
                                                 <hr />
                                             </form>
 
-                                            <div id="test">
+                                            <div id="comment-wrapper">
 
                                                 <?php
                             require_once 'database.php';
@@ -139,10 +139,11 @@ require_once './components/navSide.php';
                                                         <div class='col-sm-12 text-right'>
                                                             <a class='btn btn-warning btn-circle text-uppercase' data-toggle='collapse'
                                                                 href='#replyTwo'><span class='glyphicon glyphicon-comment'></span> 1 comment</a>
-                                                            <a class='float-right btn btn-outline-primary ml-2'> <i class='fa fa-reply'></i>
+                                                            <a class='float-right btn btn-outline-primary ml-2 btnReply'> <i class='fa fa-reply'></i>
                                                                 Reply</a>
                                                         </div>
                                                 </div>
+                                                <div class='offset-sm-6 col-sm-6 text-right replyCol'></div>
                                             </div>"; 
                                                 }
                             } catch (PDOException $ex) {
@@ -176,7 +177,8 @@ require_once './components/navSide.php';
 
                                 foreach ($aResponses as $aResponse) {
 
-                                    echo " <div class='row response collapse' id='replyTwo'>
+                                    echo " <div class'container-test'>
+                                    <div class='row response collapse' id='replyTwo'>
                                                 <div class='col-sm-3 responseInformation'>
                                                     <img src='http://dummyimage.com/60x60/666/ffffff&text=No+Image' class='img-rounded'>
                                                     <div class='review-block-name'><a href='#'>" . $aResponse['name'] . "</a></div>
@@ -185,6 +187,7 @@ require_once './components/navSide.php';
                                                 <div class='col-sm-9'>
                                                     <div class='review-block-description'>" . $aResponse['response'] . "</div>
                                                 </div>
+                                            </div>
                                             </div>"; 
                                                 }
                             } catch (PDOException $ex) {

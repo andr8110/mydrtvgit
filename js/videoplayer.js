@@ -1,6 +1,8 @@
 // ****************************************
 // CREATE AND READ
 // ****************************************
+
+// CLICK SUBMIT COMMENT
 $('#commentForm').submit(function (e) {
     e.preventDefault()
     $.ajax({
@@ -29,9 +31,24 @@ $('#commentForm').submit(function (e) {
                       </div>
                       </div>`
   
-        $('#test').prepend(sHTML)
+        $('#comment-wrapper').prepend(sHTML)
         return
       }
       console.log('Cannot submit comment')
     })
+  })
+
+
+
+  // CLICK BUTTON REPLY
+  $(document).on("click", ".btnReply", function(){
+    var sHTML2 = `<form id='formResponse'  method="post">
+                      <textarea name='txtReply' class="form-control" name="addComment" id="addComment" rows="5"></textarea>
+                      <button
+                          class="btn btn-success btn-circle text-uppercase" type="submit" id="submitComment"><span class="glyphicon glyphicon-send"></span> Summit comment
+                      </button>
+                   </form>`
+
+$('.replyCol').prepend(sHTML2)
+return
   })
