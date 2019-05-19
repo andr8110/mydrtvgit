@@ -14,8 +14,8 @@ require_once './components/navSide.php';
             <div class="row">
                 <div class="col-sm-12">
                     <form class="form-inline my-2 my-md-0 d-flex justify-content-center">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <input id='programSearch' class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button id='btnProgramSearch' class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
                     </form>
                 </div>
             </div>
@@ -145,7 +145,7 @@ require_once './components/navSide.php';
                             $aMovies = $sQuery->fetchAll();
                             foreach ($aMovies as $aMovie)  {
 
-                            echo "<li class='list-inline-item col-xs-12 col-sm-6 col-md-3 col-lg-3'>
+                            echo "<li data-name='".$aMovie['title']."' class='list-inline-item archiveItem col-xs-12 col-sm-6 col-md-3 col-lg-3'>
                                   <a href='videoplayer.php?movieID=". $aMovie['id'] . "'><span
                                     class='col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left programListColFix programTitle'>
                                     " . $aMovie['title'] . "</span></a>
