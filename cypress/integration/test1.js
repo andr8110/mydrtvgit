@@ -15,22 +15,17 @@ describe('Test 1', function () {
       .type('disney')
       .should('have.value', 'disney')
 
-    // Clicks on button containing text "Find nu" and tries redirecting to new page
+    // Clicks on button with class ".btnSearch" and tries redirecting to new page
     cy.get('.btnSearch').click()
     
     // Checks that new page contains "search.php" in url and redirects if so
     cy.url().should('include', 'search.php')
 
-    // Clicks on button containing text "Se Film" and starts movie
-    cy.get('#2').click()
+    // Clicks on button containing text "Se Film" and tries redirecting to new page
+    cy.get('#1').click()
   
-    // Checks that new page contains "videoplayer.php" in url and redirects if so
+    // Checks that new page contains "videoplayer.php" in url and redirects if so -> movie starts
     cy.url().should('include', 'videoplayer.php')
-
-     /*
-    // Clicks on button containing text "Play" and starts movie
-    cy.contains('Play').click()
-    */
 
   })
 })
