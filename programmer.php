@@ -23,34 +23,34 @@ require_once './components/navSide.php';
                 <div class="col-sm-3">
                     <h5>Sorter efter</h5>
                     <div class="list-group">
-                        <a href="#" class="filter-punkt list-group-item list-group-item-action">Navn</a>
-                        <a href="#" class="filter-punkt list-group-item list-group-item-action">Ratings</a>
-                        <a href="#" class="filter-punkt list-group-item list-group-item-action">Udgivelsesdato</a>
-                        <a href="#" class="filter-punkt list-group-item list-group-item-action">My DR TV bedømmelser</a>
+                    <span id='btnSortByName' class="filter-punkt list-group-item list-group-item-action">Navn</span>
+                    <span class="filter-punkt list-group-item list-group-item-action">Ratings</span>
+                    <span class="filter-punkt list-group-item list-group-item-action">Udgivelsesdato</span>
+                    <span class="filter-punkt list-group-item list-group-item-action">My DR TV bedømmelser</span>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <h5>Genre</h5>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="Drama">Drama</label>
+                    <div class="checkbox checkbox_genre">
+                        <label><input type="checkbox" value="action">Action</label>
                     </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="Dokumentar">Dokumentar</label>
+                    <div class="checkbox checkbox_genre ">
+                        <label><input type="checkbox" value="horror">Horror</label>
                     </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="Kultur">Kultur</label>
+                    <div class="checkbox checkbox_genre">
+                        <label><input type="checkbox" value="fantasy">Fantasy</label>
                     </div>
-                    <div class="checkbox">
+                    <div class="checkbox checkbox_genre">
                         <label><input type="checkbox" value="Natur">Natur og viden</label>
                     </div>
-                    <div class="checkbox">
+                    <div class="checkbox checkbox_genre">
                         <label><input type="checkbox" value="Nyheder">Nyheder og aktualitet</label>
                     </div>
-                    <div class="checkbox">
+                    <div class="checkbox checkbox_genre">
                         <label><input type="checkbox" value="Sport">Sport</label>
                     </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="Underholdning">Underholdning</label>
+                    <div class="checkbox checkbox_genre">
+                        <label><input type="checkbox" value="comic">Comic</label>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -85,7 +85,7 @@ require_once './components/navSide.php';
                 </div>
             </div>
             <div class="row form-inline my-2 my-md-0 d-flex justify-content-end">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Find nu</button>
+                <button id='btnResetSort' class="btn btn-outline-success my-2 my-sm-0" type="button">Reset</button>
             </div>
         </div>
 
@@ -94,42 +94,42 @@ require_once './components/navSide.php';
         <div class="container">
             <div class="row alfabetFiltrering">
                 <div class="col-sm-12">
-                    <a href="#" class="filter-bogstav btn btn-default">A</a>
-                    <a href="#" class="filter-bogstav btn btn-default">B</a>
-                    <a href="#" class="filter-bogstav btn btn-default">C</a>
-                    <a href="#" class="filter-bogstav btn btn-default">D</a>
-                    <a href="#" class="filter-bogstav btn btn-default">E</a>
-                    <a href="#" class="filter-bogstav btn btn-default">F</a>
-                    <a href="#" class="filter-bogstav btn btn-default">G</a>
-                    <a href="#" class="filter-bogstav btn btn-default">H</a>
-                    <a href="#" class="filter-bogstav btn btn-default">I</a>
-                    <a href="#" class="filter-bogstav btn btn-default">J</a>
-                    <a href="#" class="filter-bogstav btn btn-default">K</a>
-                    <a href="#" class="filter-bogstav btn btn-default">L</a>
-                    <a href="#" class="filter-bogstav btn btn-default">M</a>
-                    <a href="#" class="filter-bogstav btn btn-default">N</a>
-                    <a href="#" class="filter-bogstav btn btn-default">O</a>
-                    <a href="#" class="filter-bogstav btn btn-default">P</a>
-                    <a href="#" class="filter-bogstav btn btn-default">Q</a>
-                    <a href="#" class="filter-bogstav btn btn-default">R</a>
-                    <a href="#" class="filter-bogstav btn btn-default">S</a>
-                    <a href="#" class="filter-bogstav btn btn-default">T</a>
-                    <a href="#" class="filter-bogstav btn btn-default">U</a>
-                    <a href="#" class="filter-bogstav btn btn-default">V</a>
-                    <a href="#" class="filter-bogstav btn btn-default">W</a>
-                    <a href="#" class="filter-bogstav btn btn-default">X</a>
-                    <a href="#" class="filter-bogstav btn btn-default">Y</a>
-                    <a href="#" class="filter-bogstav btn btn-default">Z</a>
-                    <a href="#" class="filter-bogstav btn btn-default">Æ</a>
-                    <a href="#" class="filter-bogstav btn btn-default">Ø</a>
-                    <a href="#" class="filter-bogstav btn btn-default">Å</a>
-                    <a href="#" class="filter-bogstav btn btn-default"></a>
+                    <span href="#" class="filter-bogstav btn btn-default">A</span>
+                    <span href="#" class="filter-bogstav btn btn-default">B</span>
+                    <span href="#" class="filter-bogstav btn btn-default">C</span>
+                    <span href="#" class="filter-bogstav btn btn-default">D</span>
+                    <span href="#" class="filter-bogstav btn btn-default">E</span>
+                    <span href="#" class="filter-bogstav btn btn-default">F</span>
+                    <span href="#" class="filter-bogstav btn btn-default">G</span>
+                    <span href="#" class="filter-bogstav btn btn-default">H</span>
+                    <span href="#" class="filter-bogstav btn btn-default">I</span>
+                    <span href="#" class="filter-bogstav btn btn-default">J</span>
+                    <span href="#" class="filter-bogstav btn btn-default">K</span>
+                    <span href="#" class="filter-bogstav btn btn-default">L</span>
+                    <span href="#" class="filter-bogstav btn btn-default">M</span>
+                    <span href="#" class="filter-bogstav btn btn-default">N</span>
+                    <span href="#" class="filter-bogstav btn btn-default">O</span>
+                    <span href="#" class="filter-bogstav btn btn-default">P</span>
+                    <span href="#" class="filter-bogstav btn btn-default">Q</span>
+                    <span href="#" class="filter-bogstav btn btn-default">R</span>
+                    <span href="#" class="filter-bogstav btn btn-default">S</span>
+                    <span href="#" class="filter-bogstav btn btn-default">T</span>
+                    <span href="#" class="filter-bogstav btn btn-default">U</span>
+                    <span href="#" class="filter-bogstav btn btn-default">V</span>
+                    <span href="#" class="filter-bogstav btn btn-default">W</span>
+                    <span href="#" class="filter-bogstav btn btn-default">X</span>
+                    <span href="#" class="filter-bogstav btn btn-default">Y</span>
+                    <span href="#" class="filter-bogstav btn btn-default">Z</span>
+                    <span href="#" class="filter-bogstav btn btn-default">Æ</span>
+                    <span href="#" class="filter-bogstav btn btn-default">Ø</span>
+                    <span href="#" class="filter-bogstav btn btn-default">Å</span>
+                    <span href="#" class="filter-bogstav btn btn-default"></span>
                 </div>
             </div>
 
             <div class="row programs-list">
                 <div class="col-sm-12">
-                    <ul class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <ul id='archiveContainer' class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 
 
@@ -139,13 +139,16 @@ require_once './components/navSide.php';
                         require_once 'database.php';
 
                         try {
-                            $sQuery = $db->prepare('SELECT * FROM `movies`');
+                            $sQuery = $db->prepare('SELECT movies.*, genre.name  FROM `movies` AS movies
+                                                    INNER JOIN genre_movies ON  movies.id  = genre_movies.movie_fk
+                                                    INNER JOIN genre AS genre ON genre.id = genre_movies.genre_fk');
                             $sQuery->execute();
 
-                            $aMovies = $sQuery->fetchAll();
+                            $aMovies = $sQuery->fetchAll(PDO::FETCH_ASSOC);
+                            // echo json_encode($aMovies);
                             foreach ($aMovies as $aMovie)  {
 
-                            echo "<li data-name='".$aMovie['title']."' class='list-inline-item archiveItem col-xs-12 col-sm-6 col-md-3 col-lg-3'>
+                            echo "<li data-name='".$aMovie['title']."' data-genre='".$aMovie['name']."' class='list-inline-item archiveItem col-xs-12 col-sm-6 col-md-3 col-lg-3'>
                                   <a href='videoplayer.php?movieID=". $aMovie['id'] . "'><span
                                     class='col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left programListColFix programTitle'>
                                     " . $aMovie['title'] . "</span></a>

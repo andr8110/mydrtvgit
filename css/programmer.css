@@ -8,13 +8,13 @@
 #filter h5 {
   color: #fff;
 }
-a.filter-punkt {
+span.filter-punkt {
   background: #333;
   border: none;
   color: #ccc;
 }
 
-a.filter-punkt:hover {
+span.filter-punkt:hover {
   background: #4D4D4D;
   border-left: 20px solid #FFD400;
   color: #ccc;
@@ -153,6 +153,15 @@ button.btn.btn-outline-success.my-2.my-sm-0 {
     .hovereffect:hover a.info {
     -webkit-transition-delay:.2s;
     transition-delay:.2s;
+    }
+
+    .filter-bogstav {
+      font-size: 30px !important;
+    }
+
+    .filter-bogstav:hover {
+      background-color: #FFD400;
+      cursor: pointer;
     }
 
 
