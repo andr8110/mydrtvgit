@@ -2,6 +2,24 @@
 // CREATE AND READ
 // ****************************************
 
+
+// PLAY-PAUSE BUTTON
+
+var playOrPause = false
+var vid = document.getElementById("video"); 
+
+function playVideo() {
+    if (playOrPause){
+        vid.pause()
+        document.getElementById('btnPlayPause').innerHTML = 'Play'
+    }else {
+        vid.play()
+        document.getElementById('btnPlayPause').innerHTML = 'Pause'
+    }
+    playOrPause = !playOrPause
+} 
+
+
 // CLICK SUBMIT COMMENT
 $('#commentForm').submit(function (e) {
     e.preventDefault()

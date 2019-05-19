@@ -31,9 +31,10 @@ require_once './components/navSide.php';
                             $aMoviesChosen = $sQuery->fetchAll();
                             foreach ($aMoviesChosen as $aMovieChosen) {
 
-                            echo "<video autoplay controls class='d-block w-100' width='250' height='250' src=/mydrtv/mydrtvgit/video/" . $aMovieChosen['path'] . "  frameborder='0'></video>
+                            echo "<video id='video' class='d-block w-100' width='250' height='250' src=/mydrtv/mydrtvgit/video/" . $aMovieChosen['path'] . "  frameborder='0'></video>
                                     </div>
                                     </div>
+                                    <button id='btnPlayPause' onclick='playVideo()'>Play</button>
                                     <div class='col-sm-12 text-left videoTitle'>
                                         <h3>" . $aMovieChosen['title'] . " (1:9)</h3>
                                     </div>
@@ -96,8 +97,7 @@ require_once './components/navSide.php';
 
                                                         <div class="form-group">
                                                             <div class="col-sm-12 text-right">
-                                                                <button
-                                                                    class="btn btn-success btn-circle text-uppercase submitKnap"
+                                                                <button id="submitComment" class="btn btn-success btn-circle text-uppercase submitKnap"
                                                                     type="submit" id="submitComment"><span
                                                                         class="glyphicon glyphicon-send"></span>Submit
                                                                     comment</button>
@@ -221,6 +221,7 @@ require_once './components/navSide.php';
 
     </div>
 </div>
+
 <?php
 $sScript = 'videoplayer.js';
 require_once './components/footerSide.php';
