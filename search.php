@@ -36,7 +36,7 @@ require_once './components/navSide.php';
 
         echo "<div class='movie col-sm-3'>
         <div class='hovereffect'>
-        <video class='d-block w-100' width='250' height='250' src=" . $aResult['path'] . "  frameborder='10'></video>
+        <video class='d-block w-100' width='250' height='250' src=video/" . $aResult['path'] . "  frameborder='0'></video>
                     <div class='overlay'>
                     <h2> " . $aResult['title'] . " 
                         " . $aResult['description'] . "
