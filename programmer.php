@@ -75,7 +75,7 @@ require_once './components/navSide.php';
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <h5>Type</h5>
+                    <h5>Kategori</h5>
                     <div class="checkbox">
                         <label><input type="checkbox" value="Film">Film</label>
                     </div>
