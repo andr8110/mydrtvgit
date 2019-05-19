@@ -22,7 +22,7 @@ session_start();
                             $aUserInfos = $sQuery->fetchAll();
                             foreach ($aUserInfos as $aUserInfo) {
 
-                            echo "<img class='profilPicMenu' src='".$aUserInfo['path']."'>
+                            echo "<img class='profilPicMenu' src='img/".$aUserInfo['path']."'>
                                     <div class='col-12'>
                                     <div contentEditable='true'><h3 class='profileName'>".$aUserInfo['name']. " ".$aUserInfo['lastname']. "</h3></div>
                                 </div>";
@@ -56,7 +56,7 @@ session_start();
 
                             echo "<div class='movie col-sm-12'>
                             <div class='hovereffect'>
-                            <iframe class='d-block w-100' width='250' height='250' src=" . $aWatchedMovie['path'] . "  frameborder='0'></iframe>
+                            <iframe class='d-block w-100' width='250' height='250' src=video/" . $aWatchedMovie['path'] . "  frameborder='0'></iframe>
                                         <div class='overlay'>
                                         <h2> " . $aWatchedMovie['title'] . " 
                                             " . $aWatchedMovie['description'] . "
@@ -97,7 +97,7 @@ session_start();
 
                             echo "<div class='movie col-sm-12'>
                             <div class='hovereffect'>
-                            <iframe class='d-block w-100' width='250' height='250' src=" . $aMovieCategory['path'] . "  frameborder='0'></iframe>
+                            <iframe class='d-block w-100' width='250' height='250' src=video/" . $aMovieCategory['path'] . "  frameborder='0'></iframe>
                                         <div class='overlay'>
                                         <h2> " . $aMovieCategory['title'] . " 
                                             " . $aMovieCategory['description'] . "
@@ -171,7 +171,7 @@ session_start();
                             foreach ($aUserImages as $aUserImage) {
 
                             echo "<button class='profileButton'>
-                                <img src='".$aUserImage['path']."' class='profile_picture_toggle rounded-circle' id='menu-toggle'><img>
+                                <img src='img/".$aUserImage['path']."' class='profile_picture_toggle rounded-circle' id='menu-toggle'><img>
                                 </button>";
                                                 
                                             }

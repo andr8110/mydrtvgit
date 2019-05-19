@@ -39,7 +39,7 @@ require_once './components/navSide.php';
                             foreach ($aMovies as $aMovie) {
 
                                 echo "<div class='carousel-item " . $activeClass . " '>
-                                <iframe class='d-block w-100' width='1280' height='725' src=" . $aMovie['path'] . "  frameborder='0'></iframe>
+                                <iframe class='d-block w-100' width='1280' height='725' src=video/" . $aMovie['path'] . "  frameborder='0'></iframe>
                                         <div class='carousel-caption d-none d-md-block'>
                                             <h2>" . $aMovie['title'] . "</h2>
                                             <p>" . $aMovie['year'] . "</p>
@@ -97,7 +97,7 @@ require_once './components/navSide.php';
 
                             echo "<div class='movie col-sm-3'>
                             <div class='hovereffect'>
-                            <iframe class='d-block w-100' width='250' height='250' src=" . $aMovieFavorite['path'] . "  frameborder='0'></iframe>                                        <div class='overlay'>
+                            <iframe class='d-block w-100' width='250' height='250' src=video/" . $aMovieFavorite['path'] . "  frameborder='0'></iframe>                                        <div class='overlay'>
                                         <h2> " . $aMovieFavorite['title'] . " 
                                             " . $aMovieFavorite['description'] . "
                                             " . $aMovieFavorite['production'] . "
@@ -143,7 +143,7 @@ require_once './components/navSide.php';
 
                             echo "<div class='movie col-sm-3'>
                             <div class='hovereffect'>
-                            <iframe class='d-block w-100' width='250' height='250' src=" . $aMovieCategory['path'] . "  frameborder='0'></iframe>
+                            <iframe class='d-block w-100' width='250' height='250' src=video/" . $aMovieCategory['path'] . "  frameborder='0'></iframe>
                                         <div class='overlay'>
                                         <h2> " . $aMovieCategory['title'] . " 
                                             " . $aMovieCategory['description'] . "
@@ -190,7 +190,7 @@ require_once './components/navSide.php';
 
                             echo "<div class='movie col-sm-3'>
                             <div class='hovereffect'>
-                            <iframe class='d-block w-100' width='250' height='250' src=" . $aWatchedMovie['path'] . "  frameborder='0'></iframe>
+                            <iframe class='d-block w-100' width='250' height='250' src=video/" . $aWatchedMovie['path'] . "  frameborder='0'></iframe>
                                         <div class='overlay'>
                                         <h2> " . $aWatchedMovie['title'] . " 
                                             " . $aWatchedMovie['description'] . "
@@ -264,7 +264,7 @@ require_once './components/navSide.php';
 
                             echo "<div class='movie col-sm-3'>
                             <div class='hovereffect'>
-                            <iframe class='d-block w-100' width='250' height='250' src=" . $aCategoryMovie['path'] . "  frameborder='0'></iframe>
+                            <iframe class='d-block w-100' width='250' height='250' src=video/" . $aCategoryMovie['path'] . "  frameborder='0'></iframe>
                                         <div class='overlay'>
                                         <h2> " . $aCategoryMovie['title'] . " 
                                             " . $aCategoryMovie['description'] . "
