@@ -181,7 +181,7 @@ require_once './components/navSide.php';
                                     echo " <div class'container-test'>
                                     <div class='row response collapse' id='replyTwo'>
                                                 <div class='col-sm-3 responseInformation'>
-                                                    <img src='img/".$aResponse['path']."' class='img-rounded'>
+                                                    <img src='img/".$aResponse['path']."' class='img-rounded imgProfile'>
                                                     <div class='review-block-name'><a href='#'>" . $aResponse['name'] . "</a></div>
                                                     <div class='review-block-date'>January 29, 2016<br />1 day ago</div>
                                                 </div>
