@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 19. 05 2019 kl. 20:32:34
--- Serverversion: 10.1.37-MariaDB
--- PHP-version: 7.2.13
+-- Genereringstid: 20. 05 2019 kl. 01:07:09
+-- Serverversion: 10.1.36-MariaDB
+-- PHP-version: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -102,7 +102,12 @@ CREATE TABLE `genre_movies` (
 
 INSERT INTO `genre_movies` (`genre_fk`, `movie_fk`) VALUES
 (1, 1),
-(2, 2);
+(2, 2),
+(3, 3),
+(4, 4),
+(1, 5),
+(2, 6),
+(3, 7);
 
 -- --------------------------------------------------------
 
@@ -129,8 +134,9 @@ INSERT INTO `movies` (`id`, `title`, `description`, `category_fk`, `production`,
 (2, 'disney2', 'blabla', 2, 'walt disney', 2010, 'shrek-5-trailer.mp4'),
 (3, 'test3', 'blabla', 3, 'test3', 2003, 'shrek-5-trailer.mp4'),
 (4, 'test4', 'blabla', 2, 'test4', 2009, 'shrek-5-trailer.mp4'),
-(5, 'test3', 'blabla', 3, 'test3', 2003, 'shrek-5-trailer.mp4'),
-(6, 'test4', 'blabla', 2, 'test4', 2011, 'shrek-5-trailer.mp4');
+(5, 'test5', 'blabla', 2, 'test3', 2003, 'shrek-5-trailer.mp4'),
+(6, 'test6', 'blabla', 2, 'test4', 2011, 'shrek-5-trailer.mp4'),
+(7, 'Detective Pikachu', 'Wauw Pikachu is here!', 2, 'Warner Bros.', 2019, 'shrek-5-trailer.mp4');
 
 -- --------------------------------------------------------
 
@@ -284,7 +290,7 @@ ALTER TABLE `genre`
 -- Tilføj AUTO_INCREMENT i tabel `movies`
 --
 ALTER TABLE `movies`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Tilføj AUTO_INCREMENT i tabel `ratings`
