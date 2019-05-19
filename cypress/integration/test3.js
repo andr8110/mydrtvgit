@@ -26,8 +26,8 @@ describe('Test 3', function () {
         // Checks off star rating containing the value "4"
           cy.get('[type="radio"]').check(['4'])
 
-        // Clicks on rating text area containing "#ratingComment", types "This is an amazing movie!" and checks if typed value is correct
-        cy.get('#ratingComment')
+        // Clicks on rating text area containing "#addComment", types "This is an amazing movie!" and checks if typed value is correct
+        cy.get('#addComment')
         .type('This is an amazing movie!')
         .should('have.value', 'This is an amazing movie!')
 

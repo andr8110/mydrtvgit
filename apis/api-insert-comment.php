@@ -12,7 +12,7 @@ try {
     // $sQuery->bindValue(':sMovieId', $_SESSION['jUser']['id']);
     $sQuery->bindValue(':sUserId', $_SESSION['jUser']['id']);
     $sQuery->bindValue(':sRating', 2);
-    $sQuery->bindValue(':sMovieId', 1);
+    $sQuery->bindValue(':sMovieId', $_SESSION['movieID']);
     $sQuery->bindValue(':sComment', $_POST['addComment']);
 
     $sQuery->execute();

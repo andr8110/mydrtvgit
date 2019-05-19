@@ -4,6 +4,8 @@ $sTitle = 'video player';
 
 $sCss = 'videoplayer.css';
 
+$_SESSION['movieID'] = $_GET['movieID'];
+
 require_once './components/top.php';
 require_once './components/navSide.php';
 ?>
@@ -88,8 +90,8 @@ require_once './components/navSide.php';
                                                         </span>
                                                     </div>
                                                     <div class="col-sm-12">
-                                                        <textarea id="ratingComment" class="form-control" name="addComment"
-                                                            id="addComment" rows="4"></textarea>
+                                                        <textarea id="addComment" class="form-control" name="addComment"
+                                                             rows="4"></textarea>
 
 
                                                         <div class="form-group">
@@ -116,10 +118,9 @@ require_once './components/navSide.php';
                             try {
                                 $sQuery = $db->prepare('SELECT ratings.*, users.name FROM `ratings` AS ratings
                                                         INNER JOIN users AS users on ratings.user_fk = users.id
-                                                        WHERE user_fk = :sUserId
-                                                        AND movie_fk = :sMovieId');
+                                                        WHERE movie_fk = :sMovieId');
 
-                                $sQuery->bindValue(':sUserId', $_SESSION['jUser']['id']);
+                               # $sQuery->bindValue(':sUserId', $_SESSION['jUser']['id']);
                                 $sQuery->bindValue(':sMovieId', $_GET['movieID']);
                                 $sQuery->execute();
 
@@ -149,6 +150,7 @@ require_once './components/navSide.php';
                             echo ($ex);
                             echo "Sorry, system is updating ...";
                             }
+                            
 
                         ?>
 
