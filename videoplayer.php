@@ -130,7 +130,7 @@ require_once './components/navSide.php';
 
                                     echo " <div id='" . $aRating['id'] ." commentrow' class='row commentRow'>
                                                 <div class='col-sm-3'>
-                                                        <img src='img/".$aRating['path']."' class='img-rounded'>
+                                                        <img src='img/".$aRating['path']."' class='img-rounded imgProfile'>
                                                         <div class='review-block-name'><a href='#'>" . $aRating['name'] . "</a></div>
                                                         <div class='review-block-date'>January 29, 2016<br/>1 day ago</div>
                                                 </div>
