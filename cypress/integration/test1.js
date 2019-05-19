@@ -27,5 +27,8 @@ describe('Test 1', function () {
     // Checks that new page contains "videoplayer.php" in url and redirects if so -> movie starts
     cy.url().should('include', 'videoplayer.php')
 
+    // Clicks on button containing text "Login" and tries redirecting to new page
+    cy.get('#btnPlayPause').click()
+
   })
 })
