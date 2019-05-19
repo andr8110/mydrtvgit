@@ -20,7 +20,8 @@ describe('Test 4', function () {
         cy.url().should('include', 'videoplayer.php')
 
         // Clicks on button containing text "Play" and starts movie
-        cy.get('.ytp-large-play-button.ytp-button').click()
+        cy.get('#video').click({force: true});
+       // cy.get('.ytp-large-play-button.ytp-button').click()
 /*
         // Checks off star rating containing the value "4"
           cy.get('[type="radio"]').check(['4'])

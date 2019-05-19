@@ -31,7 +31,7 @@ require_once './components/navSide.php';
                             $aMoviesChosen = $sQuery->fetchAll();
                             foreach ($aMoviesChosen as $aMovieChosen) {
 
-                            echo "<iframe class='d-block w-100' width='250' height='250' src=/mydrtv/mydrtvgit/video/" . $aMovieChosen['path'] . "  frameborder='0'></iframe>
+                            echo "<video id='video' controls class='d-block w-100' width='250' height='250' src=/mydrtv/mydrtvgit/video/" . $aMovieChosen['path'] . "  frameborder='0'></video>
                                     </div>
                                     </div>
                                     <div class='col-sm-12 text-left videoTitle'>
