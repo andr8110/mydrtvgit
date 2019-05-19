@@ -19,10 +19,13 @@ session_start();
                             $sQuery->bindValue(':sUserId', $_SESSION['jUser']['id']);
                             $sQuery->execute();
 
-                            $aUserImages = $sQuery->fetchAll();
-                            foreach ($aUserImages as $aUserImage) {
+                            $aUserInfos = $sQuery->fetchAll();
+                            foreach ($aUserInfos as $aUserInfo) {
 
-                            echo "<img class='profilPicMenu' src='".$aUserImage['path']."'>";
+                            echo "<img class='profilPicMenu' src='".$aUserInfo['path']."'>
+                                    <div class='col-12'>
+                                    <div contentEditable='true'><h3 class='profileName'>".$aUserInfo['name']. " ".$aUserInfo['lastname']. "</h3></div>
+                                </div>";
                                                 
                                             }
                         } catch (PDOException $ex) {
@@ -31,9 +34,7 @@ session_start();
                         }
 
                         ?>
-                <div class="col-12">
-                    <h3 class="profileName">Malene Bærtelsen</h3>
-                </div>
+
             </div>
         </div>
         <div class="list-group list-group-flush">
