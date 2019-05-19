@@ -171,7 +171,7 @@ require_once './components/navSide.php';
                                                         WHERE rating_fk IN 
                                                         (select id from ratings where rating_fk = :sRatingFk)');
 
-                                $sQuery->bindValue(':sRatingFk', 1);
+                                $sQuery->bindValue(':sRatingFk', $_SESSION['movieID']);
                                 $sQuery->execute();
 
                                 $aResponses = $sQuery->fetchAll();
