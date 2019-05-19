@@ -1,10 +1,36 @@
+<?php
+session_start();
+
+?>
+
 <div class="d-flex flex-row-reverse toggled" id="wrapper">
 
     <!-- Sidebar -->
     <div class="bg-dark" id="sidebar-wrapper">
         <div class="row sideMenuTop">
             <div class="col-12 text-center">
-                <img class="profilPicMenu" src="img/21879710_1053867184749691_3233441853638443008_n.png">
+
+            <?php
+                        require_once 'database.php';
+
+                        try {
+                            $sQuery = $db->prepare('SELECT * FROM `users`                       
+                                                    WHERE id = :sUserId');
+                            $sQuery->bindValue(':sUserId', $_SESSION['jUser']['id']);
+                            $sQuery->execute();
+
+                            $aUserImages = $sQuery->fetchAll();
+                            foreach ($aUserImages as $aUserImage) {
+
+                            echo "<img class='profilPicMenu' src='".$aUserImage['path']."'>";
+                                                
+                                            }
+                        } catch (PDOException $ex) {
+                        echo ($ex);
+                        echo "Sorry, system is updating ...";
+                        }
+
+                        ?>
                 <div class="col-12">
                     <h3 class="profileName">Malene Bærtelsen</h3>
                 </div>
@@ -128,7 +154,34 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Børn</a>
                 </li>
-                <button class="profileButton"><img src="img/21879710_1053867184749691_3233441853638443008_n.png"class="profile_picture_toggle rounded-circle" id="menu-toggle"><img></button>
+                <li class="nav-item">
+
+
+                <?php
+                        require_once 'database.php';
+
+                        try {
+                            $sQuery = $db->prepare('SELECT * FROM `users`                       
+                                                    WHERE id = :sUserId');
+                            $sQuery->bindValue(':sUserId', $_SESSION['jUser']['id']);
+                            $sQuery->execute();
+
+                            $aUserImages = $sQuery->fetchAll();
+                            foreach ($aUserImages as $aUserImage) {
+
+                            echo "<button class='profileButton'>
+                                <img src='".$aUserImage['path']."' class='profile_picture_toggle rounded-circle' id='menu-toggle'><img>
+                                </button>";
+                                                
+                                            }
+                        } catch (PDOException $ex) {
+                        echo ($ex);
+                        echo "Sorry, system is updating ...";
+                        }
+
+                        ?>
+                
+                </li>
             </ul>
             <!-- <form class="form-inline my-2 my-md-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

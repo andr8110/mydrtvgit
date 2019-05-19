@@ -116,7 +116,7 @@ require_once './components/navSide.php';
                             require_once 'database.php';
 
                             try {
-                                $sQuery = $db->prepare('SELECT ratings.*, users.name FROM `ratings` AS ratings
+                                $sQuery = $db->prepare('SELECT ratings.*, users.name, users.path FROM `ratings` AS ratings
                                                         INNER JOIN users AS users on ratings.user_fk = users.id
                                                         WHERE movie_fk = :sMovieId');
 
@@ -130,7 +130,7 @@ require_once './components/navSide.php';
 
                                     echo " <div id='" . $aRating['id'] ." commentrow' class='row commentRow'>
                                                 <div class='col-sm-3'>
-                                                        <img src='http://dummyimage.com/60x60/666/ffffff&text=No+Image' class='img-rounded'>
+                                                        <img src='".$aRating['path']."' class='img-rounded'>
                                                         <div class='review-block-name'><a href='#'>" . $aRating['name'] . "</a></div>
                                                         <div class='review-block-date'>January 29, 2016<br/>1 day ago</div>
                                                 </div>
@@ -181,7 +181,7 @@ require_once './components/navSide.php';
                                     echo " <div class'container-test'>
                                     <div class='row response collapse' id='replyTwo'>
                                                 <div class='col-sm-3 responseInformation'>
-                                                    <img src='http://dummyimage.com/60x60/666/ffffff&text=No+Image' class='img-rounded'>
+                                                    <img src='".$aResponse['path']."' class='img-rounded'>
                                                     <div class='review-block-name'><a href='#'>" . $aResponse['name'] . "</a></div>
                                                     <div class='review-block-date'>January 29, 2016<br />1 day ago</div>
                                                 </div>

@@ -304,6 +304,7 @@ require_once './components/navSide.php';
 
 
 
+
 <?php 
 $sScript = 'index.js';
 require_once './components/footerSide.php';

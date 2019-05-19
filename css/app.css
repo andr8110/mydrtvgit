@@ -275,3 +275,18 @@
     .carousel-item{
       margin-top: 32px;
     }
+
+    .btnCookies, .btnLearnMore, .btnOK{
+      border: solid 1px #FFD400!important;
+      background-color: transparent!important;
+    }
+
+    .btnCookies:hover, btnLearnMore:hover, .btnOK:hover{
+      border: solid 1px #FFD400!important;
+      background-color: #FFD400!important;
+      color: #333333!important;
+    }
+
+    .btnLearnMore{
+      margin-left: 10px!important;
+    }
