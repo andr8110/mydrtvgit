@@ -76,11 +76,11 @@ require_once './components/navSide.php';
                 </div>
                 <div class="col-sm-3">
                     <h5>Kategori</h5>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="Film">Film</label>
+                    <div class="checkbox checkbox_category">
+                        <label><input type="checkbox" value="movie">Film</label>
                     </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="Serie">Serie</label>
+                    <div class="checkbox checkbox_category">
+                        <label><input type="checkbox" value="serie">Serie</label>
                     </div>
                 </div>
             </div>
