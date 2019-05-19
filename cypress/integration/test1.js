@@ -21,14 +21,13 @@ describe('Test 1', function () {
     // Checks that new page contains "search.php" in url and redirects if so
     cy.url().should('include', 'search.php')
 
-    // Clicks on button containing text "Se Film" and tries redirecting to new page
+    // Clicks on button with id "1" and tries redirecting to new page
     cy.get('#1').click()
   
-    // Checks that new page contains "videoplayer.php" in url and redirects if so -> movie starts
+    // Checks that new page contains "videoplayer.php" in url and redirects if so
     cy.url().should('include', 'videoplayer.php')
 
-    // Clicks on button containing text "Login" and tries redirecting to new page
+    // Clicks on button with id "btnPlayPause" and movie starts
     cy.get('#btnPlayPause').click()
-
   })
 })
