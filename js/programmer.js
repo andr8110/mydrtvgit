@@ -121,13 +121,13 @@ $(checkbox).change(function() {
         //If check do something
         //ADD genre to array
         aCategory.push(sCategory)
-        console.log(sCategory);
+        // console.log(sCategory);
         sortByCategory()
     } else {
         //If not check do something
         // DELETE genre from array
         aCategory.splice($.inArray(sCategory, aCategory),1);
-        console.log(sCategory);
+        // console.log(sCategory);
         sortByCategory()
     }
     // console.log(aCategory);
@@ -144,7 +144,7 @@ function sortByCategory() {
          data: {aCategory: aCategory},
          dataType: "JSON"
          }).always(function (jData) {
-         console.log(jData)
+        //  console.log(jData)
          if (jData.status !== 0) {
              deleteDiv.remove(); 
          //console.log('succes');
