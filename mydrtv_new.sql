@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Vært: 127.0.0.1
--- Genereringstid: 20. 05 2019 kl. 01:42:51
--- Serverversion: 10.1.36-MariaDB
--- PHP-version: 7.2.10
+-- Host: 127.0.0.1
+-- Generation Time: May 20, 2019 at 09:58 AM
+-- Server version: 10.1.39-MariaDB
+-- PHP Version: 7.3.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur-dump for tabellen `category`
+-- Table structure for table `category`
 --
 
 CREATE TABLE `category` (
@@ -34,7 +34,7 @@ CREATE TABLE `category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Data dump for tabellen `category`
+-- Dumping data for table `category`
 --
 
 INSERT INTO `category` (`id`, `name`) VALUES
@@ -44,7 +44,7 @@ INSERT INTO `category` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur-dump for tabellen `favorites`
+-- Table structure for table `favorites`
 --
 
 CREATE TABLE `favorites` (
@@ -53,7 +53,7 @@ CREATE TABLE `favorites` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Data dump for tabellen `favorites`
+-- Dumping data for table `favorites`
 --
 
 INSERT INTO `favorites` (`user_fk`, `movie_fk`) VALUES
@@ -67,7 +67,7 @@ INSERT INTO `favorites` (`user_fk`, `movie_fk`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur-dump for tabellen `genre`
+-- Table structure for table `genre`
 --
 
 CREATE TABLE `genre` (
@@ -76,7 +76,7 @@ CREATE TABLE `genre` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Data dump for tabellen `genre`
+-- Dumping data for table `genre`
 --
 
 INSERT INTO `genre` (`id`, `name`) VALUES
@@ -88,7 +88,7 @@ INSERT INTO `genre` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur-dump for tabellen `genre_movies`
+-- Table structure for table `genre_movies`
 --
 
 CREATE TABLE `genre_movies` (
@@ -97,7 +97,7 @@ CREATE TABLE `genre_movies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Data dump for tabellen `genre_movies`
+-- Dumping data for table `genre_movies`
 --
 
 INSERT INTO `genre_movies` (`genre_fk`, `movie_fk`) VALUES
@@ -112,7 +112,7 @@ INSERT INTO `genre_movies` (`genre_fk`, `movie_fk`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur-dump for tabellen `movies`
+-- Table structure for table `movies`
 --
 
 CREATE TABLE `movies` (
@@ -126,22 +126,22 @@ CREATE TABLE `movies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Data dump for tabellen `movies`
+-- Dumping data for table `movies`
 --
 
 INSERT INTO `movies` (`id`, `title`, `description`, `category_fk`, `production`, `year`, `path`) VALUES
-(1, 'disney1', 'blabla', 1, 'walt disney', 2000, 'shrek-5-trailer.mp4'),
-(2, 'disney2', 'blabla', 2, 'walt disney', 2010, 'shrek-5-trailer.mp4'),
-(3, 'test3', 'blabla', 3, 'test3', 2003, 'shrek-5-trailer.mp4'),
-(4, 'test4', 'blabla', 2, 'test4', 2009, 'shrek-5-trailer.mp4'),
-(5, 'test5', 'blabla', 2, 'test3', 2003, 'shrek-5-trailer.mp4'),
-(6, 'test6', 'blabla', 2, 'test4', 2011, 'shrek-5-trailer.mp4'),
-(7, 'Detective Pikachu', 'Wauw Pikachu is here!', 2, 'Warner Bros.', 2019, 'shrek-5-trailer.mp4');
+(1, 'Shrek 1', 'Shrek er for vild', 1, 'Walt Disney', 2000, 'shrek-5-trailer.mp4'),
+(2, 'Shrek 2', 'Den nye Shrek 2 er for vild', 2, 'Walt Disney', 2010, 'shrek-5-trailer.mp4'),
+(3, 'Shrek 3', 'Den nye shrek 3 er for vild', 3, 'Walt Disney', 2003, 'shrek-5-trailer.mp4'),
+(4, 'Shrek 4', 'Den nye shrek 4 er for vild', 2, 'Dimension Films', 2009, 'shrek-5-trailer.mp4'),
+(5, 'Shrek 5', 'Den nye shrek 5 er for vild', 2, 'Walt Disney', 2003, 'shrek-5-trailer.mp4'),
+(6, 'shrek6', 'Den nye shrek 6 er for vild', 2, 'Walt Disney', 2011, 'shrek-5-trailer.mp4'),
+(7, 'Detective Pikachu', 'Detektiv Pichachu gør det igen!', 2, 'Warner Bros.', 2019, 'shrek-5-trailer.mp4');
 
 -- --------------------------------------------------------
 
 --
--- Struktur-dump for tabellen `ratings`
+-- Table structure for table `ratings`
 --
 
 CREATE TABLE `ratings` (
@@ -153,19 +153,16 @@ CREATE TABLE `ratings` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Data dump for tabellen `ratings`
+-- Dumping data for table `ratings`
 --
 
 INSERT INTO `ratings` (`id`, `movie_fk`, `user_fk`, `rating`, `comment`) VALUES
-(1, 1, 1, 2, 'test1'),
-(2, 1, 1, 2, 'test2'),
-(3, 1, 1, 2, ''),
-(4, 1, 1, 2, 'lalala');
+(1, 1, 1, 2, 'AD HVOR PLAT');
 
 -- --------------------------------------------------------
 
 --
--- Struktur-dump for tabellen `response`
+-- Table structure for table `response`
 --
 
 CREATE TABLE `response` (
@@ -176,19 +173,16 @@ CREATE TABLE `response` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Data dump for tabellen `response`
+-- Dumping data for table `response`
 --
 
 INSERT INTO `response` (`id`, `user_fk`, `rating_fk`, `response`) VALUES
-(1, 2, 1, 'hahahha'),
-(2, 1, 1, 'styr dig'),
-(3, 2, 1, 'åårh'),
-(4, 1, 1, 'hej');
+(1, 2, 1, 'Ja jeg synes også den er mega plat!!!');
 
 -- --------------------------------------------------------
 
 --
--- Struktur-dump for tabellen `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -201,7 +195,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Data dump for tabellen `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `lastname`, `email`, `password`, `path`) VALUES
@@ -211,7 +205,7 @@ INSERT INTO `users` (`id`, `name`, `lastname`, `email`, `password`, `path`) VALU
 -- --------------------------------------------------------
 
 --
--- Struktur-dump for tabellen `watched`
+-- Table structure for table `watched`
 --
 
 CREATE TABLE `watched` (
@@ -221,7 +215,7 @@ CREATE TABLE `watched` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Data dump for tabellen `watched`
+-- Dumping data for table `watched`
 --
 
 INSERT INTO `watched` (`user_fk`, `movie_fk`, `date`) VALUES
@@ -231,81 +225,81 @@ INSERT INTO `watched` (`user_fk`, `movie_fk`, `date`) VALUES
 (2, 1, '2019-05-10 09:37:24');
 
 --
--- Begrænsninger for dumpede tabeller
+-- Indexes for dumped tables
 --
 
 --
--- Indeks for tabel `category`
+-- Indexes for table `category`
 --
 ALTER TABLE `category`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indeks for tabel `genre`
+-- Indexes for table `genre`
 --
 ALTER TABLE `genre`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indeks for tabel `movies`
+-- Indexes for table `movies`
 --
 ALTER TABLE `movies`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indeks for tabel `ratings`
+-- Indexes for table `ratings`
 --
 ALTER TABLE `ratings`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indeks for tabel `response`
+-- Indexes for table `response`
 --
 ALTER TABLE `response`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indeks for tabel `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Brug ikke AUTO_INCREMENT for slettede tabeller
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- Tilføj AUTO_INCREMENT i tabel `category`
+-- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- Tilføj AUTO_INCREMENT i tabel `genre`
+-- AUTO_INCREMENT for table `genre`
 --
 ALTER TABLE `genre`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- Tilføj AUTO_INCREMENT i tabel `movies`
+-- AUTO_INCREMENT for table `movies`
 --
 ALTER TABLE `movies`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- Tilføj AUTO_INCREMENT i tabel `ratings`
+-- AUTO_INCREMENT for table `ratings`
 --
 ALTER TABLE `ratings`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- Tilføj AUTO_INCREMENT i tabel `response`
+-- AUTO_INCREMENT for table `response`
 --
 ALTER TABLE `response`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- Tilføj AUTO_INCREMENT i tabel `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
