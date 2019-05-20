@@ -4,42 +4,57 @@
 
 
 // PLAY-PAUSE BUTTON
-
 var playOrPause = false
-var vid = document.getElementById("video"); 
+var vid = document.getElementById("video")
+var btn = document.getElementById('btnPlayPause')
 
 function playVideo() {
-    if (playOrPause){
-        vid.pause()
-        document.getElementById('btnPlayPause').innerHTML = "<i class='fas fa-play'></i>"
-    }else {
-        vid.play()
-        document.getElementById('btnPlayPause').innerHTML = "<i class='fas fa-pause'></i>"
-    }
-    playOrPause = !playOrPause
+  if (playOrPause) {
+    vid.pause()
+    document.getElementById('btnPlayPause').innerHTML = "<i class='fas fa-play'></i>"
+  } else {
+    vid.play()
+    document.getElementById('btnPlayPause').innerHTML = "<i class='fas fa-pause'></i>"
+  }
+  playOrPause = !playOrPause
+}
 
-    if(playOrPause){
-        vid.play()
-        document.getElementById('btnPlayPause').style.visibility = "hidden";
-    }
+btn.addEventListener("mouseover", function () {
+  if (playOrPause) {
+    document.getElementById('btnPlayPause').style.visibility = "visible"
+  }
+})
 
-} 
+vid.addEventListener("mouseleave", mouseLeave)
+function mouseLeave() {
+  if (playOrPause) {
+    document.getElementById('btnPlayPause').style.visibility = "hidden"
+  }
+}
+
+vid.addEventListener("mouseover", mouseOver)
+function mouseOver() {
+  if (playOrPause) {
+    document.getElementById('btnPlayPause').style.visibility = "visible"
+  }
+}
+
 
 
 // CLICK SUBMIT COMMENT
 $('#commentForm').submit(function (e) {
-    e.preventDefault()
-    $.ajax({
-      url: "apis/api-insert-comment.php",
-      method: "POST",
-      data: $('#commentForm').serialize(),
-      dataType: 'JSON'
-    }).always(function (jData){
-      console.log(jData)
-      if (jData.status !== 0) {
+  e.preventDefault()
+  $.ajax({
+    url: "apis/api-insert-comment.php",
+    method: "POST",
+    data: $('#commentForm').serialize(),
+    dataType: 'JSON'
+  }).always(function (jData) {
+    console.log(jData)
+    if (jData.status !== 0) {
 
-                       
-        var sHTML = `<div id='${jData[0].id} commentrow' class='row commentRow'>
+
+      var sHTML = `<div id='${jData[0].id} commentrow' class='row commentRow'>
                       <div class='col-sm-3'>
                       <img src='http://dummyimage.com/60x60/666/ffffff&text=No+Image' class='img-rounded'>
                       <div class='review-block-name'><a href='#'>${jData[0].name}</a></div>
@@ -54,25 +69,25 @@ $('#commentForm').submit(function (e) {
                               Reply</a>
                       </div>
                       </div>`
-  
-        $('#comment-wrapper').prepend(sHTML)
-        return
-      }
-      console.log('Cannot submit comment')
-    })
+
+      $('#comment-wrapper').prepend(sHTML)
+      return
+    }
+    console.log('Cannot submit comment')
   })
+})
 
 
 
-  // CLICK BUTTON REPLY
-  $(document).on("click", ".btnReply", function(){
-    var sHTML2 = `<form id='formResponse'  method="post">
+// CLICK BUTTON REPLY
+$(document).on("click", ".btnReply", function () {
+  var sHTML2 = `<form id='formResponse'  method="post">
                       <textarea name='txtReply' class="form-control" name="addComment" id="addComment" rows="5"></textarea>
                       <button
                           class="btn btn-success btn-circle text-uppercase" type="submit" id="submitComment"><span class="glyphicon glyphicon-send"></span> Summit comment
                       </button>
                    </form>`
 
-$('.replyCol').prepend(sHTML2)
-return
-  })
+  $('.replyCol').prepend(sHTML2)
+  return
+})
