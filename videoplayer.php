@@ -16,6 +16,7 @@ require_once './components/navSide.php';
             <div class="row text-center">
                 <div class="col-sm-12">
                     <div class="embed-responsive embed-responsive-16by9">
+                        <div class="videoWrapper">
 
                         <?php
                         require_once 'database.php';
@@ -34,7 +35,7 @@ require_once './components/navSide.php';
                             echo "<video id='video' class='d-block w-100' width='250' height='250' src=video/" . $aMovieChosen['path'] . "  frameborder='0'></video>
                                     </div>
                                     </div>
-                                    <button id='btnPlayPause' onclick='playVideo()'>Play</button>
+                                    <button id='btnPlayPause' onclick='playVideo()'><i class='fas fa-play'></i></button>
                                     <div class='col-sm-12 text-left videoTitle'>
                                         <h3>" . $aMovieChosen['title'] . " (1:9)</h3>
                                     </div>
@@ -52,6 +53,7 @@ require_once './components/navSide.php';
                         }
 
                         ?>
+                        </div>
 
 
                     </div>

@@ -11,12 +11,18 @@ var vid = document.getElementById("video");
 function playVideo() {
     if (playOrPause){
         vid.pause()
-        document.getElementById('btnPlayPause').innerHTML = 'Play'
+        document.getElementById('btnPlayPause').innerHTML = "<i class='fas fa-play'></i>"
     }else {
         vid.play()
-        document.getElementById('btnPlayPause').innerHTML = 'Pause'
+        document.getElementById('btnPlayPause').innerHTML = "<i class='fas fa-pause'></i>"
     }
     playOrPause = !playOrPause
+
+    if(playOrPause){
+        vid.play()
+        document.getElementById('btnPlayPause').style.visibility = "hidden";
+    }
+
 } 
 
 

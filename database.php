@@ -1,7 +1,7 @@
 <?php
 try {
     $sUserName = 'root';
-    $sPassword = '';
+    $sPassword = 'root';
     $sConnection = "mysql:host=localhost; dbname=mydrtv; charset=utf8mb4";
 
     $aOptions = array(
