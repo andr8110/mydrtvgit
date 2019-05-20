@@ -39,10 +39,12 @@ require_once './components/navSide.php';
                             foreach ($aMovies as $aMovie) {
 
                                 echo "<div class='carousel-item " . $activeClass . " '>
+                                <div class='hovereffect'>
                                 <video class='d-block w-100' width='1280' height='625' src=video/" . $aMovie['path'] . "  frameborder='0'></video>
                                         <div class='carousel-caption d-none d-md-block'>
                                             <h2>" . $aMovie['title'] . "</h2>
-                                            <p>" . $aMovie['year'] . "</p>
+                                            <a class='info' href='videoplayer.php?movieID=". $aMovie['id'] . "'>Se film</a>
+                                        </div>
                                         </div>
                                     </div>";
                                     $activeClass = ""; 

@@ -250,6 +250,7 @@
 
 .dropdown.list-group-item.list-group-item-action.nedersteLinks {
     background: #333;
+    padding-left: 10px;
     border: none;
 }
 
@@ -270,6 +271,10 @@ a.dropdown-item {
 .dropdown-menu.show {
   background: #333;
   border: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: none!important;
 }
 
 
