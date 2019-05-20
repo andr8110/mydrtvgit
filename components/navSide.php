@@ -117,7 +117,19 @@
             <a href="#" class="list-group-item list-group-item-action bg-dark nedersteLinks">Dine anmeldelser</a>
             <a href="#" class="list-group-item list-group-item-action bg-dark">Dine Favoritter</a>
             <a href="#" class="list-group-item list-group-item-action bg-dark">Dine kommentarer</a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark nedersteLinks"><i class="fas fa-cog"></i> Indstillinger</a>
+            <!-- <a href="#" class="list-group-item list-group-item-action bg-dark nedersteLinks"><i class="fas fa-cog"></i> Indstillinger</a> -->
+
+            <div class="dropdown list-group-item list-group-item-action  nedersteLinks ">
+                <button class="btn btnIndstillinger btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-cog"></i> Indstillinger
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Slet bruger</a>
+
+                </div>
+            </div>
+
+
             <a href="logout.php" class="list-group-item list-group-item-action bg-dark "><i class="fas fa-sign-out-alt"></i> Log ud</a>
         </div>
     </div>

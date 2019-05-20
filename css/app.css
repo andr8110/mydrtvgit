@@ -232,6 +232,45 @@
       background: #ccc;
       border-left: 20px solid #FFD400;
   }
+  a.list-group-item.list-group-item-action.bg-dark {
+    border: none;
+}
+
+
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background: #333333!important;
+  color: #ccc!important;
+}
+  .btn.btnIndstillinger.btn-secondary.dropdown-toggle {
+    background: transparent!important;
+    color: #ccc;
+    border: none!important;
+}
+
+.dropdown.list-group-item.list-group-item-action.nedersteLinks {
+    background: #333;
+    border: none;
+}
+
+.dropdown.list-group-item.list-group-item-action.nedersteLinks:hover {
+    border-left: 20px solid #FFD400;
+}
+
+.btn.btnIndstillinger.btn-secondary.dropdown-toggle:hover {
+    color: #ccc;
+}
+
+
+a.dropdown-item {
+  background: #333;
+  color: #ccc;
+}
+
+.dropdown-menu.show {
+  background: #333;
+  border: none;
+}
 
 
     /*FOOTER*/
