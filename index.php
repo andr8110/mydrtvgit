@@ -97,11 +97,8 @@ require_once './components/navSide.php';
 
                             echo "<div class='movie col-sm-3'>
                             <div class='hovereffect'>
-                            <video class='d-block w-100' width='250' height='250' src=video/" . $aMovieFavorite['path'] . "  frameborder='0'></video>                                        <div class='overlay'>
-                                        <h2> " . $aMovieFavorite['title'] . " 
-                                            " . $aMovieFavorite['description'] . "
-                                            " . $aMovieFavorite['production'] . "
-                                            " . $aMovieFavorite['year'] . " </h2>
+                            <video class='d-block w-100' width='250' height='145' src=video/" . $aMovieFavorite['path'] . "  frameborder='0'></video>                                        <div class='overlay'>
+                                        <h2> " . $aMovieFavorite['title'] . " </h2>
                                             <a class='info' href='videoplayer.php?movieID=". $aMovieFavorite['id'] . "'>Se film</a>
                                       
                                             </div>
@@ -143,12 +140,9 @@ require_once './components/navSide.php';
 
                             echo "<div class='movie col-sm-3'>
                             <div class='hovereffect'>
-                            <video class='d-block w-100' width='250' height='250' src=video/" . $aMovieCategory['path'] . "  frameborder='0'></video>
+                            <video class='d-block w-100' width='250' height='145' src=video/" . $aMovieCategory['path'] . "  frameborder='0'></video>
                                         <div class='overlay'>
-                                        <h2> " . $aMovieCategory['title'] . " 
-                                            " . $aMovieCategory['description'] . "
-                                            " . $aMovieCategory['production'] . "
-                                            " . $aMovieCategory['year'] . " </h2>
+                                        <h2> " . $aMovieCategory['title'] . "  </h2>
                                             <a class='info' href='videoplayer.php?movieID=". $aMovieCategory['id'] . "'>Se film</a>
                                       
                                             </div>
@@ -190,12 +184,9 @@ require_once './components/navSide.php';
 
                             echo "<div class='movie col-sm-3'>
                             <div class='hovereffect'>
-                            <video class='d-block w-100' width='250' height='250' src=video/" . $aWatchedMovie['path'] . "  frameborder='0'></video>
+                            <video class='d-block w-100' width='250' height='145' src=video/" . $aWatchedMovie['path'] . "  frameborder='0'></video>
                                         <div class='overlay'>
-                                        <h2> " . $aWatchedMovie['title'] . " 
-                                            " . $aWatchedMovie['description'] . "
-                                            " . $aWatchedMovie['production'] . "
-                                            " . $aWatchedMovie['year'] . " </h2>
+                                        <h2> " . $aWatchedMovie['title'] . "  </h2>
                                             <a class='info' href='videoplayer.php?movieID=". $aWatchedMovie['id'] . "'>Se film</a>
                                       
                                             </div>
@@ -264,12 +255,9 @@ require_once './components/navSide.php';
 
                             echo "<div class='movie col-sm-3'>
                             <div class='hovereffect'>
-                            <video class='d-block w-100' width='250' height='250' src=video/" . $aCategoryMovie['path'] . "  frameborder='0'></video>
+                            <video class='d-block w-100' width='250' height='145' src=video/" . $aCategoryMovie['path'] . "  frameborder='0'></video>
                                         <div class='overlay'>
-                                        <h2> " . $aCategoryMovie['title'] . " 
-                                            " . $aCategoryMovie['description'] . "
-                                            " . $aCategoryMovie['production'] . "
-                                            " . $aCategoryMovie['year'] . " </h2>
+                                        <h2> " . $aCategoryMovie['title'] . "  </h2>
                                             <a class='info' href='videoplayer.php?movieID=". $aMovieCategory['id'] . "'>Se film</a>
                                       
                                             </div>
