@@ -219,6 +219,7 @@
     
       #wrapper.toggled #sidebar-wrapper {
         margin-right: -24rem;
+        display: none;
       }
     }
 
