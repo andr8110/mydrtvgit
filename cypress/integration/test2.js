@@ -20,11 +20,11 @@ describe('Test 2', function () {
 
         // Clicks on button with id "0" and tries redirecting to new page
         cy.get('#0').click()
-       
+
         // Checks that new page contains "videoplayer.php" in url and redirects if so
         cy.url().should('include', 'videoplayer.php')
-        
+
         // Clicks on button containing text "Play" and starts movie
-        cy.contains('Play').click()
+        cy.get('#btnPlayPause').click()
     })
 })

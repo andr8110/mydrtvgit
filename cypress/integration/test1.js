@@ -10,10 +10,10 @@ describe('Test 1', function () {
     // Checks that new page contains "index.php" in url and redirects if so
     cy.url().should('include', 'index.php')
 
-    // Clicks on input field containing ".form-control", types "disney" and checks if typed value is correct
+    // Clicks on input field containing ".form-control", types "Shrek" and checks if typed value is correct
     cy.get('#txtSearch')
-      .type('disney')
-      .should('have.value', 'disney')
+      .type('Shrek')
+      .should('have.value', 'Shrek')
 
     // Clicks on button with class ".btnSearch" and tries redirecting to new page
     cy.get('.btnSearch').click()
