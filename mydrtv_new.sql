@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2019 at 09:58 AM
+-- Generation Time: May 20, 2019 at 12:08 PM
 -- Server version: 10.1.39-MariaDB
 -- PHP Version: 7.3.5
 
@@ -199,7 +199,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `lastname`, `email`, `password`, `path`) VALUES
-(1, 'André', 'Vestergaard', 'av@kea.dk', '123456', '21879710_1053867184749691_3233441853638443008_n.png'),
+(1, 'André', 'Vestergaard', 'av@kea.dk', '123456', 'man-01.png'),
 (2, 'Malene', 'Bærtelsen', 'mb@kea.dk', '123456', '21879710_1053867184749691_3233441853638443008_n.png');
 
 -- --------------------------------------------------------
