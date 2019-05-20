@@ -60,6 +60,8 @@
     margin: 40px;
     margin-bottom: 20px;
     width: 100%;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
   }
 
   .profileName{
@@ -179,12 +181,11 @@
 
     #sidebar-wrapper {
       min-height: 100vh;
-      margin-right: -20rem;
-      margin-top: 39px;
-      -webkit-transition: margin .25s ease-out;
-      -moz-transition: margin .25s ease-out;
-      -o-transition: margin .25s ease-out;
-      transition: margin .25s ease-out;
+      padding-top: 70px;
+      -webkit-transition: all .5s ease-out;
+      -moz-transition: all .5s ease-out;
+      -o-transition: all .5s ease-out;
+      transition: all .5s ease-out;
       width: 20vw;
     }
     
@@ -218,8 +219,7 @@
       }
     
       #wrapper.toggled #sidebar-wrapper {
-        margin-right: -24rem;
-        display: none;
+        width: 0px;
       }
     }
 

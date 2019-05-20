@@ -57,10 +57,7 @@
                             <div class='hovereffect'>
                             <video class='d-block w-100' width='250' height='250' src=video/" . $aWatchedMovie['path'] . "  frameborder='0'></video>
                                         <div class='overlay'>
-                                        <h2> " . $aWatchedMovie['title'] . " 
-                                            " . $aWatchedMovie['description'] . "
-                                            " . $aWatchedMovie['production'] . "
-                                            " . $aWatchedMovie['year'] . " </h2>
+                                        <h2> " . $aWatchedMovie['title'] . " </h2>
                                             <a id='continueWatchingMovie' class='info' href='videoplayer.php?movieID=". $aWatchedMovie['id'] . "'>Se film</a>
                                       
                                             </div>
@@ -98,10 +95,7 @@
                             <div class='hovereffect'>
                             <video class='d-block w-100' width='250' height='250' src=video/" . $aMovieCategory['path'] . "  frameborder='0'></video>
                                         <div class='overlay'>
-                                        <h2> " . $aMovieCategory['title'] . " 
-                                            " . $aMovieCategory['description'] . "
-                                            " . $aMovieCategory['production'] . "
-                                            " . $aMovieCategory['year'] . " </h2>
+                                        <h2> " . $aMovieCategory['title'] . " </h2>
                                             <a id='recommendedMovie' class='info' href='videoplayer.php?movieID=". $aMovieCategory['id'] . "'>Se film</a>
                                       
                                             </div>
