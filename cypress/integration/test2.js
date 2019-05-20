@@ -1,6 +1,5 @@
 describe('Test 2', function () {
     it('DRTV Login Page', function () {
-
         // Goes to login page
         cy.visit('http://localhost/mydrtv/mydrtvgit/login.php')
 
@@ -16,27 +15,16 @@ describe('Test 2', function () {
         // Checks that new page contains "programmer.php" in url and redirects if so
         cy.url().should('include', 'programmer.php')
 
-        // Checks off checkbox containing the value "Drama"
-        cy.get('[type="checkbox"]').check(['Drama'])
+        // Checks off checkbox containing the value "Horror" and filters the movies
+        cy.get('[type="checkbox"]').check(['horror'])
 
-        /*
-        // Clicks on button containing "Find nu" and tries redirecting to new page
-        cy.contains('Find nu').click()
-
-        // Checks that new page contains "search.php" in url and redirects if so
-        cy.url().should('include', 'search.php')
-
-        // Clicks on button containing text "Se Film" and starts movie
-        cy.get('#1').click()
-    
+        // Clicks on button with id "0" and tries redirecting to new page
+        cy.get('#0').click()
+       
         // Checks that new page contains "videoplayer.php" in url and redirects if so
         cy.url().should('include', 'videoplayer.php')
         
         // Clicks on button containing text "Play" and starts movie
         cy.contains('Play').click()
-        */
-
-
-
     })
 })

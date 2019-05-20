@@ -17,13 +17,13 @@ describe('Test 1', function () {
 
     // Clicks on button with class ".btnSearch" and tries redirecting to new page
     cy.get('.btnSearch').click()
-    
+
     // Checks that new page contains "search.php" in url and redirects if so
     cy.url().should('include', 'search.php')
 
     // Clicks on button with id "1" and tries redirecting to new page
     cy.get('#1').click()
-  
+
     // Checks that new page contains "videoplayer.php" in url and redirects if so
     cy.url().should('include', 'videoplayer.php')
 

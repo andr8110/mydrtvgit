@@ -146,13 +146,15 @@ require_once './components/navSide.php';
 
                             $aMovies = $sQuery->fetchAll(PDO::FETCH_ASSOC);
                             // echo json_encode($aMovies);
+                            $count = 0;
                             foreach ($aMovies as $aMovie)  {
 
                             echo "<li data-name='".$aMovie['title']."' data-genre='".$aMovie['name']."' class='list-inline-item archiveItem col-xs-12 col-sm-6 col-md-3 col-lg-3'>
-                                  <a href='videoplayer.php?movieID=". $aMovie['id'] . "'><span
+                                  <a id=". $count ." href='videoplayer.php?movieID=". $aMovie['id'] . "'><span
                                     class='col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left programListColFix programTitle'>
                                     " . $aMovie['title'] . "</span></a>
                                   </li>";
+                                  $count += 1;
 
                                                 
                                             }
